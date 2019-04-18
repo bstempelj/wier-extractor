@@ -1,4 +1,4 @@
-import requests
+import requests, pprint
 from re import findall
 
 
@@ -17,17 +17,41 @@ def read_page(path, use_utf8=False):
 
 
 def regex(site):
-	for title in findall('<a href="(.*)"><b>(.*)</b></a><br>', site):
-		print(title[1])
+	json = {
+		'items': []
+	}
+
+	titles = [t[1] for t in findall('<a href="(.*)"><b>(.*)</b></a><br>', site)]
+	list_prices = [lp for lp in findall('<s>(.*)</s>', site)]
+	prices = [p for p in findall('<span class="bigred"><b>(.*)</b></span>', site)]
+
+	for item in zip(titles, list_prices, prices):
+		json['items'].append({
+			'title': item[0],
+			'list_price': item[1],
+			'price': item[2]
+		})
+
+	return json
 
 
 if __name__ == '__main__':
+	pp = pprint.PrettyPrinter(indent=2)
+
 	(diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
-	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+	# (audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# overstock
-	regex(diamonds)
-	regex(pendants)
+	print('--------------------------------')
+	print('--- Diamonds | overstock.com ---')
+	print('--------------------------------')
+	pp.pprint(regex(diamonds))
+	print()
+
+	print('--------------------------------')
+	print('--- Pendants | overstock.com ---')
+	print('--------------------------------')
+	pp.pprint(regex(pendants))
 
 
 	# rtvslo
