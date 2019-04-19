@@ -11,9 +11,8 @@ paths = [
 
 
 def read_page(path, use_utf8=False):
-	if use_utf8:
-		return open(path, 'r', encoding='utf-8').read()
-	return open(path, 'r').read()
+	page = open(path, 'r', encoding='utf-8') if use_utf8 else open(path, 'r')
+	return page.read()
 
 
 def regex(site):
@@ -25,19 +24,22 @@ def regex(site):
 	price_re 	  = r'<span class="bigred"><b>{}</b></span>'.format(money_re)
 	list_price_re = r'<s>{}</s>'.format(money_re)
 	saving_re 	  = r'{}\s*\({}\)'.format(money_re, perct_re)
+	content_re	  = re.compile(r'<span class="normal">(.*?)<br>', re.DOTALL)
 
 	titles 		= [t[1] for t in findall(title_re, site)]
 	list_prices = findall(list_price_re, site)
 	prices 		= findall(price_re, site)
 	savings 	= findall(saving_re, site)
+	content		= content_re.findall(site)
 
-	for item in zip(titles, list_prices, prices, savings):
+	for item in zip(titles, list_prices, prices, savings, content):
 		json['items'].append({
 			'title': item[0],
 			'list_price': item[1],
 			'price': item[2],
 			'saving': item[3][0],
-			'saving_percent': item[3][1]
+			'saving_percent': item[3][1],
+			'content': item[4]
 		})
 
 	return json
@@ -63,4 +65,3 @@ if __name__ == '__main__':
 
 
 	# rtvslo
-
