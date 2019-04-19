@@ -1,4 +1,4 @@
-import requests, pprint
+import requests, pprint, re
 from re import findall
 
 
@@ -17,19 +17,27 @@ def read_page(path, use_utf8=False):
 
 
 def regex(site):
-	json = {
-		'items': []
-	}
+	json = { 'items': [] }
 
-	titles = [t[1] for t in findall('<a href="(.*)"><b>(.*)</b></a><br>', site)]
-	list_prices = [lp for lp in findall('<s>(.*)</s>', site)]
-	prices = [p for p in findall('<span class="bigred"><b>(.*)</b></span>', site)]
+	money_re 	  = r'([$]\s*[0-9.,]+)'
+	perct_re 	  = r'(\d+%)'
+	title_re 	  = r'<a href="(.*)"><b>(.*)</b></a><br>'
+	price_re 	  = r'<span class="bigred"><b>{}</b></span>'.format(money_re)
+	list_price_re = r'<s>{}</s>'.format(money_re)
+	saving_re 	  = r'{}\s*\({}\)'.format(money_re, perct_re)
 
-	for item in zip(titles, list_prices, prices):
+	titles 		= [t[1] for t in findall(title_re, site)]
+	list_prices = findall(list_price_re, site)
+	prices 		= findall(price_re, site)
+	savings 	= findall(saving_re, site)
+
+	for item in zip(titles, list_prices, prices, savings):
 		json['items'].append({
 			'title': item[0],
 			'list_price': item[1],
-			'price': item[2]
+			'price': item[2],
+			'saving': item[3][0],
+			'saving_percent': item[3][1]
 		})
 
 	return json
