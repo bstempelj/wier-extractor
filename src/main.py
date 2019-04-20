@@ -15,7 +15,30 @@ def read_page(path, use_utf8=False):
 	return page.read()
 
 
-def regex(site):
+def re_rtvslo(site):
+	json = { 'items': [] }
+
+	# to collect:
+	# - author
+	# - published_time
+	# - title
+	# - subtitle
+	# - lead
+	# - content
+
+	author_re = re.compile(r'<strong>(.*?)</strong>')
+	published_time_re = re.compile(r'\d{1,2}\.\s*(januar|februar|marec|april|maj|junij|julij|avgust|september|oktober|november|december)\s*\d{4}\s*\w*\s*\d{2}:\d{2}')
+	title_re = re.compile(r'<h1>(.*?)</h1>')
+
+	author = author_re.search(site).group(1) # 1: match between tags
+	published_time = published_time_re.search(site).group()
+	title = title_re.search(site).group(1)
+	
+
+	return json
+
+
+def re_overstock(site):
 	json = { 'items': [] }
 
 	money_re 	  = r'([$]\s*[0-9.,]+)'
@@ -48,20 +71,33 @@ def regex(site):
 if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
-	(diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
-	# (audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+	# (diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
+	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# overstock
-	print('--------------------------------')
-	print('--- Diamonds | overstock.com ---')
-	print('--------------------------------')
-	pp.pprint(regex(diamonds))
-	print()
+	# print('--------------------------------')
+	# print('--- Diamonds | overstock.com ---')
+	# print('--------------------------------')
+	# pp.pprint(re_overstock(diamonds))
+	# print()
 
-	print('--------------------------------')
-	print('--- Pendants | overstock.com ---')
-	print('--------------------------------')
-	pp.pprint(regex(pendants))
+	# print('--------------------------------')
+	# print('--- Pendants | overstock.com ---')
+	# print('--------------------------------')
+	# pp.pprint(re_overstock(pendants))
+	# print()
 
 
 	# rtvslo
+	# print('--------------------------------')
+	# print('------- Audi | rtvslo.si -------')
+	# print('--------------------------------')
+	# pp.pprint(re_rtvslo(audi))
+	# print()
+
+	re_rtvslo(audi)
+
+	# print('--------------------------------')
+	# print('------- Audi | rtvslo.si -------')
+	# print('--------------------------------')
+	# pp.pprint(re_rtvslo(volvo))
