@@ -16,26 +16,39 @@ def read_page(path, use_utf8=False):
 
 
 def re_rtvslo(site):
-	author_re = re.compile(r'<strong>(.*?)</strong>')
+	author_re 		  = re.compile(r'<strong>(.*?)</strong>')
 	published_time_re = re.compile(r'\d{1,2}\.\s*(januar|februar|marec|april|maj|junij|julij|avgust|september|oktober|november|december)\s*\d{4}\s*\w*\s*\d{2}:\d{2}')
-	title_re = re.compile(r'<h1>(.*?)</h1>')
-	subtitle_re = re.compile(r'<div class="subtitle">(.*?)</div>')
-	lead_re = re.compile(r'<p class="lead">(.*?)</p>')
-	# content_re = re.compile(r'<div class="article-body">(.*?)<div class="article-footer">', re.DOTALL)
+	title_re 		  = re.compile(r'<h1>(.*?)</h1>')
+	subtitle_re 	  = re.compile(r'<div class="subtitle">(.*?)</div>')
+	lead_re 		  = re.compile(r'<p class="lead">(.*?)</p>')
+	content_re 		  = re.compile(r'<article class="article">(.*?)</article>', re.DOTALL)
+	text_re 		  = re.compile(r'<p[^>]*>(.*?)<\/p>', re.DOTALL)
+	tags_re 		  = re.compile(r'<\/?\w+\s*.*?>', re.DOTALL)
 
-	author = author_re.search(site).group(1) # 1: match between tags
-	published_time = published_time_re.search(site).group()
-	title = title_re.search(site).group(1)
-	subtitle = subtitle_re.search(site).group(1)
-	lead = lead_re.search(site).group(1)
-	# content = content_re.search(site).group(1)
+	author 			  = author_re.search(site).group(1) # 1: match between tags
+	published_time 	  = published_time_re.search(site).group()
+	title 			  = title_re.search(site).group(1)
+	subtitle 		  = subtitle_re.search(site).group(1)
+	lead 			  = lead_re.search(site).group(1)
+
+	# get only text from content
+	content = content_re.search(site).group(1)
+	content = text_re.findall(content)
+	content = ''.join(content)
+
+	# remove all tags from content
+	tags = tags_re.search(content)
+	while tags is not None:
+		content = content[:tags.start()] + content[tags.end():]
+		tags = tags_re.search(content)
 
 	json = {
 		'author': author,
 		'published_time': published_time,
 		'title': title,
 		'subtitle': subtitle,
-		'lead': lead
+		'lead': lead,
+		'content': content
 	}
 
 	return json
@@ -52,11 +65,11 @@ def re_overstock(site):
 	saving_re 	  = r'{}\s*\({}\)'.format(money_re, perct_re)
 	content_re	  = re.compile(r'<span class="normal">(.*?)<br>', re.DOTALL)
 
-	titles 		= [t[1] for t in findall(title_re, site)]
-	list_prices = findall(list_price_re, site)
-	prices 		= findall(price_re, site)
-	savings 	= findall(saving_re, site)
-	content		= content_re.findall(site)
+	titles 		  = [t[1] for t in findall(title_re, site)]
+	list_prices   = findall(list_price_re, site)
+	prices 		  = findall(price_re, site)
+	savings 	  = findall(saving_re, site)
+	content		  = content_re.findall(site)
 
 	for item in zip(titles, list_prices, prices, savings, content):
 		json['items'].append({
