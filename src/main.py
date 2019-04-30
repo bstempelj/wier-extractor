@@ -6,13 +6,24 @@ paths = [
 	'../pages/overstock.com/jewelry01.html',
 	'../pages/overstock.com/jewelry02.html',
 	'../pages/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html',
-	'../pages/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljs╠îe v razredu - RTVSLO.si.html'
+	'../pages/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljs╠îe v razredu - RTVSLO.si.html',
+	'../pages/slo-tech.com/Musk zaradi afere s tvitom oglobljen z 20 milijoni dolarjev, odstopa kot prvi mož upravnega odbora @ Slo-Tech.htm',
+	'../pages/slo-tech.com/Nvidia lansirala Geforce GTX 1650 @ Slo-Tech.htm'
 ]
 
 
 def read_page(path, use_utf8=False):
 	page = open(path, 'r', encoding='utf-8') if use_utf8 else open(path, 'r')
 	return page.read()
+
+
+def remove_tags(text):
+	tags_re = re.compile(r'<\/?\w+\s*.*?>', re.DOTALL)
+	tags = tags_re.search(text)
+	while tags is not None:
+		text = text[:tags.start()] + text[tags.end():]
+		tags = tags_re.search(text)
+	return text
 
 
 def re_rtvslo(site):
@@ -23,7 +34,6 @@ def re_rtvslo(site):
 	lead_re 		  = re.compile(r'<p class="lead">(.*?)</p>')
 	content_re 		  = re.compile(r'<article class="article">(.*?)</article>', re.DOTALL)
 	text_re 		  = re.compile(r'<p[^>]*>(.*?)<\/p>', re.DOTALL)
-	tags_re 		  = re.compile(r'<\/?\w+\s*.*?>', re.DOTALL)
 
 	author 			  = author_re.search(site).group(1) # 1: match between tags
 	published_time 	  = published_time_re.search(site).group()
@@ -33,14 +43,8 @@ def re_rtvslo(site):
 
 	# get only text from content
 	content = content_re.search(site).group(1)
-	content = text_re.findall(content)
-	content = ''.join(content)
-
-	# remove all tags from content
-	tags = tags_re.search(content)
-	while tags is not None:
-		content = content[:tags.start()] + content[tags.end():]
-		tags = tags_re.search(content)
+	content = ''.join(text_re.findall(content))
+	content = remove_tags(content)
 
 	json = {
 		'author': author,
@@ -48,6 +52,36 @@ def re_rtvslo(site):
 		'title': title,
 		'subtitle': subtitle,
 		'lead': lead,
+		'content': content
+	}
+
+	return json
+
+
+def re_slotech(site):
+	title_re = re.compile(r'<h3 itemprop="headline"><a href=".*" itemprop="name">(.*?)</a></h3>')
+	author_re = re.compile(r'<span itemprop="name">(.*?)</span>')
+	date_re = re.compile(r'\d{1,2}\.\s(jan|feb|mar|apr|maj|jun|jul|avg|sep|okt|nov|dec)\s\d{4}')
+	time_re = re.compile(r'\d{2}:\d{2}')
+	category_re = re.compile(r'itemprop="articleSection">(.*?)<\/a>')
+	source_re = re.compile(r'<a\sclass=\"source\".*?>(.*?)<\/a>')
+	content_re = re.compile(r'>\s-\s(.*?)</div>', re.DOTALL)
+
+	title = title_re.search(site).group(1)
+	author = author_re.search(site).group(1)
+	date = date_re.search(site).group()
+	time = time_re.search(site).group()
+	source = source_re.search(site).group(1)
+	category = category_re.search(site).group(1)
+	content = remove_tags(content_re.search(site).group(1)).replace('\n', ' ')
+
+	json = {
+		'title': title,
+		'author': author,
+		'date': date,
+		'time': time,
+		'source': source,
+		'category': category,
 		'content': content
 	}
 
@@ -87,8 +121,13 @@ def re_overstock(site):
 if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
+	# provided
 	(diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
 	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+
+	# chosen
+	(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
+
 
 	# overstock
 	print('--------------------------------')
@@ -115,3 +154,17 @@ if __name__ == '__main__':
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
 	pp.pprint(re_rtvslo(volvo))
+	print()
+
+
+	# slotech
+	print('--------------------------------')
+	print('------ Tesla | slotech.com -----')
+	print('--------------------------------')
+	pp.pprint(re_slotech(tesla))
+	print()
+
+	print('--------------------------------')
+	print('----- Nvidia | slotech.com -----')
+	print('--------------------------------')
+	pp.pprint(re_slotech(nvidia))
