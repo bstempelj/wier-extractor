@@ -1,5 +1,8 @@
 import requests, pprint, re
 from re import findall
+from lxml import html
+from io import StringIO
+from bs4 import BeautifulSoup
 
 
 paths = [
@@ -11,7 +14,7 @@ paths = [
 
 
 def read_page(path, use_utf8=False):
-	page = open(path, 'r', encoding='utf-8') if use_utf8 else open(path, 'r')
+	page = open(path, 'r', encoding='ISO-8859-1') if use_utf8 else open(path, 'r')
 	return page.read()
 
 
@@ -54,6 +57,30 @@ def re_rtvslo(site):
 	return json
 
 
+def xp_rtvslo(site):
+	f = StringIO(site)
+	tree = html.parse(f)
+	author_xp = tree.xpath('//div[@class="author-name"]/text()')[0]
+	published_time_xp = tree.xpath('//div[@class="publish-meta"]/text()')[0].strip()
+	title_xp = tree.xpath('//header[@class="article-header"]/h1/text()')[0].strip()
+	subtitle_xp = tree.xpath('//header[@class="article-header"]/div[@class="subtitle"]/text()')[0].strip()
+	lead_xp = tree.xpath('//header[@class="article-header"]/p[@class="lead"]/text()')[0].strip()
+	content_xp = ''.join(tree.xpath('//div[@class="article-body"]/article[@class="article"]/p/text()'))
+
+	print(content_xp)
+
+	json_xp = {
+		'author': author_xp,
+		'published_time': published_time_xp,
+		'title': title_xp,
+		'subtitle': subtitle_xp,
+		'lead': lead_xp,
+		'content': content_xp
+	}
+
+	return json_xp
+
+
 def re_overstock(site):
 	json = { 'items': [] }
 
@@ -87,31 +114,31 @@ def re_overstock(site):
 if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
-	(diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
+	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
 	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# overstock
 	print('--------------------------------')
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
-	pp.pprint(re_overstock(diamonds))
+	#pp.pprint(re_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
 	print('--- Pendants | overstock.com ---')
 	print('--------------------------------')
-	pp.pprint(re_overstock(pendants))
+	#pp.pprint(re_overstock(pendants))
 	print()
-
 
 	# rtvslo
 	print('--------------------------------')
 	print('------- Audi | rtvslo.si -------')
 	print('--------------------------------')
 	pp.pprint(re_rtvslo(audi))
-	print()
+	pp.pprint(xp_rtvslo(audi))
+	print()so
 
 	print('--------------------------------')
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
-	pp.pprint(re_rtvslo(volvo))
+	#pp.pprint(re_rtvslo(volvo))
