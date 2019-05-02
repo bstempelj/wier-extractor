@@ -145,15 +145,42 @@ def re_overstock(site):
 	return json
 
 
+def xp_overstock(site):
+	f = StringIO(site)
+	tree = html.parse(f)
+
+	base_xPath = '//td[2][@valign="top"]'
+
+	titles_list = tree.xpath(base_xPath + '/a/b/text()')
+	contents_list = tree.xpath(base_xPath + '/table' + base_xPath + '/span[@class="normal"]/text()')
+	listPrices_list = tree.xpath(base_xPath + '/table//td[1][@valign="top"]//tr[1]/td[2]/s/text()')
+	prices_list = tree.xpath(base_xPath + '/table//td[1][@valign="top"]//tr[2]/td[2]/span/b/text()')
+	tmp = tree.xpath(base_xPath + '/table//td[1][@valign="top"]//tr[3]/td[2]/span[@class="littleorange"]/text()')
+	savePrices_list = [price.split(" ") for price in tmp]
+
+	json = {'items': []}
+	for item in zip(titles_list, contents_list, listPrices_list, prices_list, savePrices_list):
+		json['items'].append({
+			'title': item[0],
+			'list_price': item[2],
+			'price': item[3],
+			'saving': item[4][0],
+			'saving_percent': item[4][1],
+			'content': item[1]
+		})
+
+	print(json)
+
+
 if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
 	# provided
-	(diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
-	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
+	#(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# chosen
-	(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
+	#(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
 
 
 	# overstock
@@ -161,6 +188,7 @@ if __name__ == '__main__':
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
 	#pp.pprint(re_overstock(diamonds))
+	pp.pprint(xp_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
@@ -173,13 +201,14 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('------- Audi | rtvslo.si -------')
 	print('--------------------------------')
-	pp.pprint(re_rtvslo(audi))
-	pp.pprint(xp_rtvslo(audi))
+	#pp.pprint(re_rtvslo(audi))
+	#pp.pprint(xp_rtvslo(audi))
 
 	print('--------------------------------')
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
 	#pp.pprint(re_rtvslo(volvo))
+	#pp.pprint(xp_rtvslo(volvo))
 	print()
 
 
