@@ -279,12 +279,11 @@ if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
 	# provided
-
-	#(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
-	#(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
+	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# chosen
-	#(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
+	(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
 	(bmwi3, arteon) = (read_page(paths[6], True), read_page(paths[7], True))
 
 
@@ -292,29 +291,29 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
-	#pp.pprint(re_overstock(diamonds))
-	#pp.pprint(xp_overstock(diamonds))
+	pp.pprint(re_overstock(diamonds))
+	pp.pprint(xp_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
 	print('--- Pendants | overstock.com ---')
 	print('--------------------------------')
-	#pp.pprint(re_overstock(pendants))
-	#pp.pprint(re_overstock(diamonds))
+	pp.pprint(re_overstock(pendants))
+	pp.pprint(re_overstock(diamonds))
 	print()
 
 	# rtvslo
 	print('--------------------------------')
 	print('------- Audi | rtvslo.si -------')
 	print('--------------------------------')
-	#pp.pprint(re_rtvslo(audi))
-	#pp.pprint(xp_rtvslo(audi))
+	pp.pprint(re_rtvslo(audi))
+	pp.pprint(xp_rtvslo(audi))
 
 	print('--------------------------------')
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
-	#pp.pprint(re_rtvslo(volvo))
-	#pp.pprint(xp_rtvslo(volvo))
+	pp.pprint(re_rtvslo(volvo))
+	pp.pprint(xp_rtvslo(volvo))
 	print()
 
 
@@ -322,15 +321,15 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('------ Tesla | slotech.com -----')
 	print('--------------------------------')
-	#pp.pprint(re_slotech(tesla))
-	#pp.pprint(xp_slotech(tesla))
+	pp.pprint(re_slotech(tesla))
+	pp.pprint(xp_slotech(tesla))
 	print()
 
 	print('--------------------------------')
 	print('----- Nvidia | slotech.com -----')
 	print('--------------------------------')
-	#pp.pprint(re_slotech(nvidia))
-	#pp.pprint(xp_slotech(nvidia))
+	pp.pprint(re_slotech(nvidia))
+	pp.pprint(xp_slotech(nvidia))
 	print()
 
 
@@ -338,7 +337,7 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('------- BMW i3 | avto.net ------')
 	print('--------------------------------')
-	#pp.pprint(re_avtonet(bmwi3))
+	pp.pprint(re_avtonet(bmwi3))
 	pp.pprint(xp_avtonet(bmwi3))
 	print()
 
@@ -346,3 +345,4 @@ if __name__ == '__main__':
 	print('------- Arteon | avto.net ------')
 	print('--------------------------------')
 	pp.pprint(re_avtonet(arteon))
+	pp.pprint(xp_avtonet(arteon))
