@@ -1,5 +1,8 @@
 import requests, pprint, re
 from re import findall
+from lxml import html
+from io import StringIO
+from bs4 import BeautifulSoup
 
 
 paths = [
@@ -15,7 +18,7 @@ paths = [
 
 
 def read_page(path, use_utf8=False):
-	page = open(path, 'r', encoding='utf-8') if use_utf8 else open(path, 'r')
+	page = open(path, 'r', encoding='ISO-8859-1') if use_utf8 else open(path, 'r')
 	return page.read()
 
 
@@ -90,6 +93,30 @@ def re_overstock(site):
 	return json
 
 
+def xp_rtvslo(site):
+	f = StringIO(site)
+	tree = html.parse(f)
+	author_xp = tree.xpath('//div[@class="author-name"]/text()')[0]
+	published_time_xp = tree.xpath('//div[@class="publish-meta"]/text()')[0].strip()
+	title_xp = tree.xpath('//header[@class="article-header"]/h1/text()')[0].strip()
+	subtitle_xp = tree.xpath('//header[@class="article-header"]/div[@class="subtitle"]/text()')[0].strip()
+	lead_xp = tree.xpath('//header[@class="article-header"]/p[@class="lead"]/text()')[0].strip()
+	content_xp = ''.join(tree.xpath('//div[@class="article-body"]/article[@class="article"]/p/text()'))
+
+	print(content_xp)
+
+	json_xp = {
+		'author': author_xp,
+		'published_time': published_time_xp,
+		'title': title_xp,
+		'subtitle': subtitle_xp,
+		'lead': lead_xp,
+		'content': content_xp
+	}
+
+	return json_xp
+
+
 def re_slotech(site):
 	title_re = re.compile(r'<h3 itemprop="headline"><a href=".*" itemprop="name">(.*?)</a></h3>')
 	author_re = re.compile(r'<span itemprop="name">(.*?)</span>')
@@ -152,11 +179,38 @@ def re_avtonet(site):
 	return json
 
 
+def xp_overstock(site):
+	f = StringIO(site)
+	tree = html.parse(f)
+
+	base_xPath = '//td[2][@valign="top"]'
+
+	titles_list = tree.xpath(base_xPath + '/a/b/text()')
+	contents_list = tree.xpath(base_xPath + '/table' + base_xPath + '/span[@class="normal"]/text()')
+	listPrices_list = tree.xpath(base_xPath + '/table//td[1][@valign="top"]//tr[1]/td[2]/s/text()')
+	prices_list = tree.xpath(base_xPath + '/table//td[1][@valign="top"]//tr[2]/td[2]/span/b/text()')
+	tmp = tree.xpath(base_xPath + '/table//td[1][@valign="top"]//tr[3]/td[2]/span[@class="littleorange"]/text()')
+	savePrices_list = [price.split(" ") for price in tmp]
+
+	json = {'items': []}
+	for item in zip(titles_list, contents_list, listPrices_list, prices_list, savePrices_list):
+		json['items'].append({
+			'title': item[0],
+			'list_price': item[2],
+			'price': item[3],
+			'saving': item[4][0],
+			'saving_percent': item[4][1],
+			'content': item[1]
+		})
+
+	print(json)
+
+
 if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
 	# provided
-	(diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
+	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
 	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# chosen
@@ -169,26 +223,28 @@ if __name__ == '__main__':
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
 	pp.pprint(re_overstock(diamonds))
+	pp.pprint(xp_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
 	print('--- Pendants | overstock.com ---')
 	print('--------------------------------')
 	pp.pprint(re_overstock(pendants))
+	pp.pprint(re_overstock(diamonds))
 	print()
-
 
 	# rtvslo
 	print('--------------------------------')
 	print('------- Audi | rtvslo.si -------')
 	print('--------------------------------')
 	pp.pprint(re_rtvslo(audi))
-	print()
+	pp.pprint(xp_rtvslo(audi))
 
 	print('--------------------------------')
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
 	pp.pprint(re_rtvslo(volvo))
+	pp.pprint(xp_rtvslo(volvo))
 	print()
 
 
