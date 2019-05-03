@@ -1,0 +1,66 @@
+#viewport{
+	width: 730px; 
+	padding:0px;
+	position: relative; 
+	/* Defines the size of the visible part of the carousel
+		Attention : if you only want to see plain items in the viewtop,
+		the width of the viewtop should take into account of :
+		- the items width
+		- the right and left padding of items
+		- the number of items you want to see in the viewtop
+	 */
+	overflow:hidden; /* Hides extra elements, those outside the viewtop area */
+}
+#viewport ul{
+	position: relative; /* Enables positionning of elements inside viewtop */
+	margin-left: 0;
+	padding: 0; /* Resets default - User Agent - style */
+}
+#viewport li{
+	width: 364px; /* Defines the size of inner element */
+	height: 145px;
+	float: left; /* Places list items side by side*/
+	list-style: none; /* Resets default - User Agent - style */
+	
+	/* Cosmetic */
+	background-color: white;
+	margin: 0 1px;
+	padding-right: 2px;
+}
+
+/* Cosmetic */
+#simplePrevious, #simpleNext{
+	cursor: pointer;
+	font-size: 0.8em;
+	text-decoration: underline;	
+}
+
+#NOviewport{
+	width: 730px; 
+	padding:0px;
+	position: relative; 
+	/* Defines the size of the visible part of the carousel
+		Attention : if you only want to see plain items in the viewtop,
+		the width of the viewtop should take into account of :
+		- the items width
+		- the right and left padding of items
+		- the number of items you want to see in the viewtop
+	 */
+	overflow:hidden; /* Hides extra elements, those outside the viewtop area */
+}
+#NOviewport ul{
+	position: relative; /* Enables positionning of elements inside viewtop */
+	margin-left: 0;
+	padding: 0; /* Resets default - User Agent - style */
+}
+#NOviewport li{
+	width: 730px; /* Defines the size of inner element */
+	height: 145px;
+	float: left; /* Places list items side by side*/
+	list-style: none; /* Resets default - User Agent - style */
+	
+	/* Cosmetic */
+	background-color: white;
+	margin: 0 1px;
+	padding-right: 5px;
+}

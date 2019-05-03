@@ -1,0 +1,259 @@
+.headerbar {
+	width: 100%;
+	height: 9px;
+	background-color:#000;
+}
+.headerbarFEEDBACK {
+	width: 100%;
+	height: 30px;
+	background-color:#FF0000;
+	color: #FFFFFF;
+	font-size: 18px; 
+    font-weight: bold;
+	line-height: 30px;
+
+}
+/* ---------------------------   HEADER ----------------------------*/
+.headerwrapperFULLWIDTH{
+	float: left;
+	width:100%; 
+	background: #062F57;
+	min-height: 10px;
+}
+.headerwrapper970{
+	margin:0px auto;
+	padding:0px 0px 0px 0px;
+	width: 972px;
+	height: 60px;
+	background: transparent;
+	position: relative;
+}
+.headerlogo{
+	float:left;
+	margin:5px 0px 5px 0px;
+	padding:0px 0px 0px 0px;
+	width: 240px;
+	height: 52px;
+}
+.headerlogo img{
+	position: absolute;
+	z-index: 1000;
+	padding: 0px 0px 0px 0px;
+}
+.headerbanner{
+	float:left;
+	margin: 0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	width: 720px;
+	height: 37px;
+	border-style:solid;
+	border-width:0px 0px 0px 0px;
+	border-color:#000000; 
+	visibility:hidden;
+}
+/* ---------------------------   HEADER MOJ.avto.net----------------------------*/
+.headerbarmenu{
+	float:left;
+	margin: 0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	width: 730px;
+	height: 20px;
+	border-style:solid;
+	border-width:0px 0px 0px 0px;
+	border-color:#000000; 
+}
+.headerbarmenu ul{
+	width:730px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	float: left;
+	/*background:#CCCCCC;*/
+}
+.headerbarmenu li{
+	float: right;
+	display:inline;
+	margin:0px 0px 0px 0px;
+	background: #000000;
+	/* ROUNDED BORDER */
+    border-color: #FFFFFF;
+	border-radius: 0px 0px 6px 6px;
+	-moz-border-radius: 0px 0px 6px 6px;
+	-webkit-border-radius: 0px 0px 6px 6px;
+	behavior: url(PIE.htc);
+
+}
+.headerbarmenu a{
+	float:left;
+	color: white;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	text-decoration:none;
+	letter-spacing: 1px;
+	/*border: 0px;*/
+	text-shadow:1px 1px 1px #000000;
+}
+.headerbarmenu a span{
+	display:block;
+	width: 125px;
+	height: 14px;
+	line-height: 14px;
+	text-align:center;
+	margin:0px 0px 0px 0px;
+	padding: 4px 4px 4px 4px;
+}
+/* ---------------------------   HEADER MENU TABS ----------------------------*/
+.ddcolortabsFULLWIDTH{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 30px;
+	/*background: transparent;*/
+	background-image: url(https://www.avto.net/_graphics/menugrad02.png);/* For Internet Explorer*/
+	background-repeat:repeat-x;
+	background-position:0px 5px;
+}
+.ddcolortabs{
+	margin:0px auto;
+	padding: 0;
+	width: 972px;
+}
+.ddcolortabs ul{
+	width: 972px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	float: left;
+}
+.ddcolortabs li{
+	display:inline;
+	margin:0px 0px 0px 0px;
+}
+.ddcolortabs a{
+	float:left;
+	color: white;
+	margin:4px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	text-decoration:none;
+	letter-spacing: 1px;
+	border-left: 1px solid #607B94;
+    border-right: 1px solid #062f57;
+	text-shadow:1px 1px 1px #000000;
+	font-size: 12px; 
+}
+.ddcolortabs a span{
+	display:block;
+	width: 121px;
+	height: 16px;
+	line-height: 16px;
+	text-align:center;
+	margin:0px 0px 0px 0px;
+	padding: 4px 4px 4px 4px;
+}
+.ddcolortabs a span.moj{
+	width: 142px;
+}
+.ddcolortabs a span.mojtrg{
+	width: 119px;
+}
+.ddcolortabs a:hover{
+	background: #CFD7DF;
+	color: #062f57;
+	margin:0px 0px 0px 0px;
+	padding-top: 4px;
+	/* ROUNDED BORDER */
+	border-color: #607B94;
+	border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	behavior: url(PIE.htc);
+	text-shadow:0px 0px 0px #000000;
+}
+.ddcolortabs a:hover span{
+	background: #CFD7DF;
+	color: #062f57;
+}
+/* ---------------------------   HEADER CURRENT SELECTED TAB----------------------------*/
+.ddcolortabs a.current{ 
+	background: #CFD7DF;
+	margin:0px 0px 0px 0px;
+	padding-top: 4px;
+	/* ROUNDED BORDER */
+    border-color: #607B94;
+	border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	behavior: url(PIE.htc);
+}
+.ddcolortabs a.current span{ 
+	background: #CFD7DF;
+	color: #062F57;
+	font-weight: bold;
+	text-shadow:0px 0px 0px #000000;
+}
+/* ---------------------------   HEADER FIRST  TAB----------------------------*/
+.ddcolortabs a.current span.first{ 
+		width: 42px; 
+}
+.ddcolortabs a span.first{ 
+		width: 42px; 
+}
+.ddcolortabs a span.first:hover{ 
+		background: #CFD7DF;
+}
+/* ---------------------------   SUBMENU ----------------------------*/
+.tabcontainerFULLWIDTH{
+	float: left;
+	position: relative;
+	width:100%; 
+	height:25px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background: #cfd7df;
+	/*border-style:solid;
+	border-width:0px 0px 1px 0px;
+	border-color:#7F9DB9;*/ 
+	margin-bottom: 0px;
+	z-index:1000; 
+	/*display: none;*/
+}
+.tabcontainer{
+	position: relative;
+	float: none;
+	margin:0px auto 0px;
+	border:none;
+	border-width: 0px 0px 0px 0px;
+	height:19px;
+	padding-top: 6px;
+	background: #CFD7DF;
+}
+.tabcontent{
+	position: relative;
+	margin:0px auto 0px;
+	width:970px; 
+	/*height: 18px;
+	line-	height:18px;*/
+	display:none;
+	padding-top: 2px;
+}
+.tabcontent span{
+	float: left;
+	border-right: 1px solid #7F9DB9;
+	border-left: 1px solid #FFFFFF;
+	padding: 0px 20px 6px 20px;
+	font-size: 11px; 
+	font-style: normal;
+    font-weight: normal;
+   	font-family: Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+.tabcontent a span{
+	text-decoration:none;
+	font-size: 11px; 
+	font-style: normal;
+    font-weight: normal;
+	color: #000000;
+}
+.tabcontent a:hover span{
+	text-decoration:underline;
+}

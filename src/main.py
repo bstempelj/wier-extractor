@@ -8,7 +8,9 @@ paths = [
 	'../pages/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html',
 	'../pages/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljs╠îe v razredu - RTVSLO.si.html',
 	'../pages/slo-tech.com/Musk zaradi afere s tvitom oglobljen z 20 milijoni dolarjev, odstopa kot prvi mož upravnega odbora @ Slo-Tech.htm',
-	'../pages/slo-tech.com/Nvidia lansirala Geforce GTX 1650 @ Slo-Tech.htm'
+	'../pages/slo-tech.com/Nvidia lansirala Geforce GTX 1650 @ Slo-Tech.htm',
+	'../pages/avto.net/www.Avto.net  Največja ponudba BMW.htm',
+	'../pages/avto.net/www.Avto.net  Največja ponudba Volkswagen.htm'
 ]
 
 
@@ -58,36 +60,6 @@ def re_rtvslo(site):
 	return json
 
 
-def re_slotech(site):
-	title_re = re.compile(r'<h3 itemprop="headline"><a href=".*" itemprop="name">(.*?)</a></h3>')
-	author_re = re.compile(r'<span itemprop="name">(.*?)</span>')
-	date_re = re.compile(r'\d{1,2}\.\s(jan|feb|mar|apr|maj|jun|jul|avg|sep|okt|nov|dec)\s\d{4}')
-	time_re = re.compile(r'\d{2}:\d{2}')
-	category_re = re.compile(r'itemprop="articleSection">(.*?)<\/a>')
-	source_re = re.compile(r'<a\sclass=\"source\".*?>(.*?)<\/a>')
-	content_re = re.compile(r'>\s-\s(.*?)</div>', re.DOTALL)
-
-	title = title_re.search(site).group(1)
-	author = author_re.search(site).group(1)
-	date = date_re.search(site).group()
-	time = time_re.search(site).group()
-	source = source_re.search(site).group(1)
-	category = category_re.search(site).group(1)
-	content = remove_tags(content_re.search(site).group(1)).replace('\n', ' ')
-
-	json = {
-		'title': title,
-		'author': author,
-		'date': date,
-		'time': time,
-		'source': source,
-		'category': category,
-		'content': content
-	}
-
-	return json
-
-
 def re_overstock(site):
 	json = { 'items': [] }
 
@@ -118,6 +90,68 @@ def re_overstock(site):
 	return json
 
 
+def re_slotech(site):
+	title_re = re.compile(r'<h3 itemprop="headline"><a href=".*" itemprop="name">(.*?)</a></h3>')
+	author_re = re.compile(r'<span itemprop="name">(.*?)</span>')
+	date_re = re.compile(r'\d{1,2}\.\s(jan|feb|mar|apr|maj|jun|jul|avg|sep|okt|nov|dec)\s\d{4}')
+	time_re = re.compile(r'\d{2}:\d{2}')
+	category_re = re.compile(r'itemprop="articleSection">(.*?)<\/a>')
+	source_re = re.compile(r'<a\sclass="source".*?>(.*?)<\/a>')
+	content_re = re.compile(r'>\s-\s(.*?)</div>', re.DOTALL)
+
+	title = title_re.search(site).group(1)
+	author = author_re.search(site).group(1)
+	date = date_re.search(site).group()
+	time = time_re.search(site).group()
+	source = source_re.search(site).group(1)
+	category = category_re.search(site).group(1)
+	content = remove_tags(content_re.search(site).group(1)).replace('\n', ' ')
+
+	json = {
+		'title': title,
+		'author': author,
+		'date': date,
+		'time': time,
+		'source': source,
+		'category': category,
+		'content': content
+	}
+
+	return json
+
+
+def re_avtonet(site):
+	json = { 'cars': [] }
+
+	carname_re = re.compile(r'<a\sclass="Adlink".*?>\n?<span>(.*?)</span>\n?</a>')
+	carimg_re = re.compile(r'<div\sclass="ResultsAdPhotoTop">\n?\s*.*?<img\ssrc=\"(.*?)\"', re.DOTALL)
+	price_re = re.compile(r'ResultsAdPrice[^>]+>.*?(?<!StaraCena\">)(\d{2}\.\d{3}\s€)', re.DOTALL)
+	logo_re = re.compile(r'<div\sclass="ResultsAdLogo">\n?\s*.*?<img\ssrc=\"(.*?)\"', re.DOTALL)
+	data_re = re.compile(r'<div\sclass="ResultsAdDataTop">.*?<ul>(.*?)</ul>', re.DOTALL)
+	li_re = re.compile(r'<li>(.*?)</li>')
+
+	carnames = carname_re.findall(site)
+	carimgs = carimg_re.findall(site)
+	logos = logo_re.findall(site)
+	prices = price_re.findall(site)[:-1]
+	data = []
+	for match in data_re.finditer(site):
+		di = match.group(1).replace('\n', '').strip()
+		di = li_re.findall(di)
+		data.append(di)
+
+	for car in zip(carnames, carimgs, logos, prices, data):
+		json['cars'].append({
+			'name'  : car[0],
+			'img'   : car[1],
+			'logo'  : car[2],
+			'price' : car[3],
+			'data'  : car[4],
+		})
+
+	return json
+
+
 if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
@@ -127,6 +161,7 @@ if __name__ == '__main__':
 
 	# chosen
 	(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
+	(bmwi3, arteon) = (read_page(paths[6]), read_page(paths[7]))
 
 
 	# overstock
@@ -168,3 +203,16 @@ if __name__ == '__main__':
 	print('----- Nvidia | slotech.com -----')
 	print('--------------------------------')
 	pp.pprint(re_slotech(nvidia))
+
+
+	# avtonet
+	print('--------------------------------')
+	print('------- BMW i3 | avto.net ------')
+	print('--------------------------------')
+	pp.pprint(re_avtonet(bmwi3))
+	print()
+
+	print('--------------------------------')
+	print('------- Arteon | avto.net ------')
+	print('--------------------------------')
+	pp.pprint(re_avtonet(arteon))
