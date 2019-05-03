@@ -11,7 +11,9 @@ paths = [
 	'../pages/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html',
 	'../pages/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljs╠îe v razredu - RTVSLO.si.html',
 	'../pages/slo-tech.com/Musk zaradi afere s tvitom oglobljen z 20 milijoni dolarjev, odstopa kot prvi mož upravnega odbora @ Slo-Tech.htm',
-	'../pages/slo-tech.com/Nvidia lansirala Geforce GTX 1650 @ Slo-Tech.htm'
+	'../pages/slo-tech.com/Nvidia lansirala Geforce GTX 1650 @ Slo-Tech.htm',
+	'../pages/avto.net/www.Avto.net  Največja ponudba BMW.htm',
+	'../pages/avto.net/www.Avto.net  Največja ponudba Volkswagen.htm'
 ]
 
 
@@ -61,6 +63,36 @@ def re_rtvslo(site):
 	return json
 
 
+def re_overstock(site):
+	json = { 'items': [] }
+
+	money_re 	  = r'([$]\s*[0-9.,]+)'
+	perct_re 	  = r'(\d+%)'
+	title_re 	  = r'<a href="(.*)"><b>(.*)</b></a><br>'
+	price_re 	  = r'<span class="bigred"><b>{}</b></span>'.format(money_re)
+	list_price_re = r'<s>{}</s>'.format(money_re)
+	saving_re 	  = r'{}\s*\({}\)'.format(money_re, perct_re)
+	content_re	  = re.compile(r'<span class="normal">(.*?)<br>', re.DOTALL)
+
+	titles 		  = [t[1] for t in findall(title_re, site)]
+	list_prices   = findall(list_price_re, site)
+	prices 		  = findall(price_re, site)
+	savings 	  = findall(saving_re, site)
+	content		  = content_re.findall(site)
+
+	for item in zip(titles, list_prices, prices, savings, content):
+		json['items'].append({
+			'title': item[0],
+			'list_price': item[1],
+			'price': item[2],
+			'saving': item[3][0],
+			'saving_percent': item[3][1],
+			'content': item[4]
+		})
+
+	return json
+
+
 def xp_rtvslo(site):
 	f = StringIO(site)
 	tree = html.parse(f)
@@ -92,7 +124,7 @@ def re_slotech(site):
 	date_re = re.compile(r'\d{1,2}\.\s(jan|feb|mar|apr|maj|jun|jul|avg|sep|okt|nov|dec)\s\d{4}')
 	time_re = re.compile(r'\d{2}:\d{2}')
 	category_re = re.compile(r'itemprop="articleSection">(.*?)<\/a>')
-	source_re = re.compile(r'<a\sclass=\"source\".*?>(.*?)<\/a>')
+	source_re = re.compile(r'<a\sclass="source".*?>(.*?)<\/a>')
 	content_re = re.compile(r'>\s-\s(.*?)</div>', re.DOTALL)
 
 	title = title_re.search(site).group(1)
@@ -149,31 +181,34 @@ def xp_slotech(site):
 	return json
 
 
-def re_overstock(site):
-	json = { 'items': [] }
 
-	money_re 	  = r'([$]\s*[0-9.,]+)'
-	perct_re 	  = r'(\d+%)'
-	title_re 	  = r'<a href="(.*)"><b>(.*)</b></a><br>'
-	price_re 	  = r'<span class="bigred"><b>{}</b></span>'.format(money_re)
-	list_price_re = r'<s>{}</s>'.format(money_re)
-	saving_re 	  = r'{}\s*\({}\)'.format(money_re, perct_re)
-	content_re	  = re.compile(r'<span class="normal">(.*?)<br>', re.DOTALL)
+def re_avtonet(site):
+	json = { 'cars': [] }
 
-	titles 		  = [t[1] for t in findall(title_re, site)]
-	list_prices   = findall(list_price_re, site)
-	prices 		  = findall(price_re, site)
-	savings 	  = findall(saving_re, site)
-	content		  = content_re.findall(site)
+	carname_re = re.compile(r'<a\sclass="Adlink".*?>\n?<span>(.*?)</span>\n?</a>')
+	carimg_re = re.compile(r'<div\sclass="ResultsAdPhotoTop">\n?\s*.*?<img\ssrc=\"(.*?)\"', re.DOTALL)
+	price_re = re.compile(r'ResultsAdPrice[^>]+>.*?(?<!StaraCena\">)(\d{2}\.\d{3}\s€)', re.DOTALL)
+	logo_re = re.compile(r'<div\sclass="ResultsAdLogo">\n?\s*.*?<img\ssrc=\"(.*?)\"', re.DOTALL)
+	data_re = re.compile(r'<div\sclass="ResultsAdDataTop">.*?<ul>(.*?)</ul>', re.DOTALL)
+	li_re = re.compile(r'<li>(.*?)</li>')
 
-	for item in zip(titles, list_prices, prices, savings, content):
-		json['items'].append({
-			'title': item[0],
-			'list_price': item[1],
-			'price': item[2],
-			'saving': item[3][0],
-			'saving_percent': item[3][1],
-			'content': item[4]
+	carnames = carname_re.findall(site)
+	carimgs = carimg_re.findall(site)
+	logos = logo_re.findall(site)
+	prices = price_re.findall(site)[:-1]
+	data = []
+	for match in data_re.finditer(site):
+		di = match.group(1).replace('\n', '').strip()
+		di = li_re.findall(di)
+		data.append(di)
+
+	for car in zip(carnames, carimgs, logos, prices, data):
+		json['cars'].append({
+			'name'  : car[0],
+			'img'   : car[1],
+			'logo'  : car[2],
+			'price' : car[3],
+			'data'  : car[4],
 		})
 
 	return json
@@ -210,39 +245,42 @@ if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
 	# provided
-	#(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
-	#(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+
+	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
+	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# chosen
-	(tesla, nvidia) = (read_page(paths[4], True), read_page(paths[5], True))
+	(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
+	(bmwi3, arteon) = (read_page(paths[6]), read_page(paths[7]))
 
 
 	# overstock
 	print('--------------------------------')
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
-	#pp.pprint(re_overstock(diamonds))
-	#pp.pprint(xp_overstock(diamonds))
+	pp.pprint(re_overstock(diamonds))
+	pp.pprint(xp_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
 	print('--- Pendants | overstock.com ---')
 	print('--------------------------------')
-	#pp.pprint(re_overstock(pendants))
+	pp.pprint(re_overstock(pendants))
+	pp.pprint(re_overstock(diamonds))
 	print()
 
 	# rtvslo
 	print('--------------------------------')
 	print('------- Audi | rtvslo.si -------')
 	print('--------------------------------')
-	#pp.pprint(re_rtvslo(audi))
-	#pp.pprint(xp_rtvslo(audi))
+	pp.pprint(re_rtvslo(audi))
+	pp.pprint(xp_rtvslo(audi))
 
 	print('--------------------------------')
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
-	#pp.pprint(re_rtvslo(volvo))
-	#pp.pprint(xp_rtvslo(volvo))
+	pp.pprint(re_rtvslo(volvo))
+	pp.pprint(xp_rtvslo(volvo))
 	print()
 
 
@@ -250,11 +288,24 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('------ Tesla | slotech.com -----')
 	print('--------------------------------')
-	#pp.pprint(re_slotech(tesla))
+	pp.pprint(re_slotech(tesla))
 	pp.pprint(xp_slotech(tesla))
 	print()
 
 	print('--------------------------------')
 	print('----- Nvidia | slotech.com -----')
 	print('--------------------------------')
-	#pp.pprint(re_slotech(nvidia))
+	pp.pprint(re_slotech(nvidia))
+
+
+	# avtonet
+	print('--------------------------------')
+	print('------- BMW i3 | avto.net ------')
+	print('--------------------------------')
+	pp.pprint(re_avtonet(bmwi3))
+	print()
+
+	print('--------------------------------')
+	print('------- Arteon | avto.net ------')
+	print('--------------------------------')
+	pp.pprint(re_avtonet(arteon))
