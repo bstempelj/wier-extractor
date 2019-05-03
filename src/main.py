@@ -1,6 +1,7 @@
 import requests, pprint, re
 from re import findall
 from lxml import html
+from lxml.etree import tostring
 from io import StringIO
 from bs4 import BeautifulSoup
 
@@ -181,7 +182,6 @@ def xp_slotech(site):
 	return json
 
 
-
 def re_avtonet(site):
 	json = { 'cars': [] }
 
@@ -212,6 +212,40 @@ def re_avtonet(site):
 		})
 
 	return json
+
+
+def xp_avtonet(site):
+	f = StringIO(site)
+	tree = html.parse(f)
+
+	carName_xp = tree.xpath('//div[@class="ResultsAd"]//div[@class="ResultsAdDataTop"]/a/span/text()')
+	carImg_xp = tree.xpath('//div[@class="ResultsAd"]//div[@class="ResultsAdPhotoTop"]/a/img/@src')
+	data_xp = tree.xpath('//div[@class="ResultsAd"]//div[@class="ResultsAdDataTop"]/ul')
+
+	logo_xp = tree.xpath('//div[@class="ResultsAd"]//div[@class="ResultsAdLogo"]/a/img/@src')
+	price_xp = tree.xpath('//div[@class="ResultsAd"]//div[@class="ResultsAdPrice"]/text() | ' +
+						  '//div[@class="ResultsAd"]//div[@class="ResultsAdPrice ResultsAdPriceAkcija"]/p[@class="AkcijaCena"]/text() | ' +
+						  '//div[@class="ResultsAd"]//div[@class="ResultsAdPrice"]/span[@class="ResultsAdPriceGrey"]/text()')
+
+	price_xp = list(map(lambda x: x.strip(), list(filter(lambda x: x.strip() != "", price_xp))))
+
+	print("test")
+
+	json = {'cars': []}
+	for car in zip(carName_xp, carImg_xp, logo_xp, price_xp, data_xp):
+		tree = html.parse(StringIO(str(tostring(car[4]))))
+		data_xpTmp = tree.xpath('//li/text()')
+
+		json['cars'].append({
+			'name'  : car[0],
+			'img'   : car[1],
+			'logo'  : car[2],
+			'price' : car[3],
+			'data'  : data_xpTmp,
+		})
+
+	return json
+
 
 
 def xp_overstock(site):
@@ -246,41 +280,41 @@ if __name__ == '__main__':
 
 	# provided
 
-	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
-	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+	#(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
+	#(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# chosen
-	(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
-	(bmwi3, arteon) = (read_page(paths[6]), read_page(paths[7]))
+	#(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
+	(bmwi3, arteon) = (read_page(paths[6], True), read_page(paths[7], True))
 
 
 	# overstock
 	print('--------------------------------')
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
-	pp.pprint(re_overstock(diamonds))
-	pp.pprint(xp_overstock(diamonds))
+	#pp.pprint(re_overstock(diamonds))
+	#pp.pprint(xp_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
 	print('--- Pendants | overstock.com ---')
 	print('--------------------------------')
-	pp.pprint(re_overstock(pendants))
-	pp.pprint(re_overstock(diamonds))
+	#pp.pprint(re_overstock(pendants))
+	#pp.pprint(re_overstock(diamonds))
 	print()
 
 	# rtvslo
 	print('--------------------------------')
 	print('------- Audi | rtvslo.si -------')
 	print('--------------------------------')
-	pp.pprint(re_rtvslo(audi))
-	pp.pprint(xp_rtvslo(audi))
+	#pp.pprint(re_rtvslo(audi))
+	#pp.pprint(xp_rtvslo(audi))
 
 	print('--------------------------------')
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
-	pp.pprint(re_rtvslo(volvo))
-	pp.pprint(xp_rtvslo(volvo))
+	#pp.pprint(re_rtvslo(volvo))
+	#pp.pprint(xp_rtvslo(volvo))
 	print()
 
 
@@ -288,21 +322,24 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('------ Tesla | slotech.com -----')
 	print('--------------------------------')
-	pp.pprint(re_slotech(tesla))
-	pp.pprint(xp_slotech(tesla))
+	#pp.pprint(re_slotech(tesla))
+	#pp.pprint(xp_slotech(tesla))
 	print()
 
 	print('--------------------------------')
 	print('----- Nvidia | slotech.com -----')
 	print('--------------------------------')
-	pp.pprint(re_slotech(nvidia))
+	#pp.pprint(re_slotech(nvidia))
+	#pp.pprint(xp_slotech(nvidia))
+	print()
 
 
 	# avtonet
 	print('--------------------------------')
 	print('------- BMW i3 | avto.net ------')
 	print('--------------------------------')
-	pp.pprint(re_avtonet(bmwi3))
+	#pp.pprint(re_avtonet(bmwi3))
+	pp.pprint(xp_avtonet(bmwi3))
 	print()
 
 	print('--------------------------------')
