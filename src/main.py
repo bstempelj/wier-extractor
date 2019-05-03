@@ -64,6 +64,7 @@ def re_rtvslo(site):
 def xp_rtvslo(site):
 	f = StringIO(site)
 	tree = html.parse(f)
+
 	author_xp = tree.xpath('//div[@class="author-name"]/text()')[0]
 	published_time_xp = tree.xpath('//div[@class="publish-meta"]/text()')[0].strip()
 	title_xp = tree.xpath('//header[@class="article-header"]/h1/text()')[0].strip()
@@ -110,6 +111,39 @@ def re_slotech(site):
 		'source': source,
 		'category': category,
 		'content': content
+	}
+
+	return json
+
+
+def xp_slotech(site):
+	f = StringIO(site)
+	tree = html.parse(f)
+	time_re = re.compile(r'\d{2}:\d{2}')
+
+	base_path = '//div[@id="content"]//article/'
+	title_xp = tree.xpath(base_path + 'header/h3[@itemprop="headline"]/a/text()')[0]
+	author_xp = tree.xpath(base_path + 'header/ul[@class="info"]//a[@itemprop="author"]/span/text()')[0]
+	date_xp = tree.xpath(base_path + 'header/ul[@class="info"]//span[@class="date"]/time/a/text()')[0]
+
+	time_tmp = tree.xpath(base_path + 'header/ul[@class="info"]//span[@class="date"]/time/text()')[0]
+	time_xp = time_re.search(time_tmp).group()
+
+	category_xp = tree.xpath(base_path + 'header/ul[@class="info"]/li[@class="categories"]/a/text()')[0]
+	source_xp = tree.xpath(base_path + 'div[@itemprop="articleBody"]/a[1]/text()')[0]
+
+	content_xp = "".join(tree.xpath(
+		base_path + 'div[@itemprop="articleBody"]/text() | ' +
+		base_path + 'div[@itemprop="articleBody"]/a[position()>1]/text()'))
+
+	json = {
+		'title': title_xp,
+		'author': author_xp,
+		'date': date_xp,
+		'time': time_xp,
+		'source': source_xp,
+		'category': category_xp,
+		'content': content_xp
 	}
 
 	return json
@@ -176,11 +210,11 @@ if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
 	# provided
-	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
+	#(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
 	#(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
 
 	# chosen
-	#(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
+	(tesla, nvidia) = (read_page(paths[4], True), read_page(paths[5], True))
 
 
 	# overstock
@@ -188,7 +222,7 @@ if __name__ == '__main__':
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
 	#pp.pprint(re_overstock(diamonds))
-	pp.pprint(xp_overstock(diamonds))
+	#pp.pprint(xp_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
@@ -217,6 +251,7 @@ if __name__ == '__main__':
 	print('------ Tesla | slotech.com -----')
 	print('--------------------------------')
 	#pp.pprint(re_slotech(tesla))
+	pp.pprint(xp_slotech(tesla))
 	print()
 
 	print('--------------------------------')
