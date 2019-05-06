@@ -18,8 +18,8 @@ paths = [
 ]
 
 
-def read_page(path, use_utf8=False):
-	page = open(path, 'r', encoding='ISO-8859-1') if use_utf8 else open(path, 'r')
+def read_page(path):
+	page = open(path, 'r', encoding='ISO-8859-1')
 	return page.read()
 
 
@@ -187,7 +187,7 @@ def re_avtonet(site):
 
 	carname_re = re.compile(r'<a\sclass="Adlink".*?>\n?<span>(.*?)</span>\n?</a>')
 	carimg_re = re.compile(r'<div\sclass="ResultsAdPhotoTop">\n?\s*.*?<img\ssrc=\"(.*?)\"', re.DOTALL)
-	price_re = re.compile(r'ResultsAdPrice[^>]+>.*?(?<!StaraCena\">)(\d{2}\.\d{3}\s€)', re.DOTALL)
+	price_re = re.compile(r'ResultsAdPrice[^>]+>.*?(?<!StaraCena\">)(\d{2}\.\d{3})', re.DOTALL)
 	logo_re = re.compile(r'<div\sclass="ResultsAdLogo">\n?\s*.*?<img\ssrc=\"(.*?)\"', re.DOTALL)
 	data_re = re.compile(r'<div\sclass="ResultsAdDataTop">.*?<ul>(.*?)</ul>', re.DOTALL)
 	li_re = re.compile(r'<li>(.*?)</li>')
@@ -195,20 +195,21 @@ def re_avtonet(site):
 	carnames = carname_re.findall(site)
 	carimgs = carimg_re.findall(site)
 	logos = logo_re.findall(site)
-	prices = price_re.findall(site)[:-1]
+	prices = price_re.findall(site)
 	data = []
 	for match in data_re.finditer(site):
 		di = match.group(1).replace('\n', '').strip()
 		di = li_re.findall(di)
 		data.append(di)
 
+
 	for car in zip(carnames, carimgs, logos, prices, data):
 		json['cars'].append({
-			'name'  : car[0],
-			'img'   : car[1],
-			'logo'  : car[2],
-			'price' : car[3],
-			'data'  : car[4],
+			'name': car[0],
+			'img': car[1],
+			'logo': car[2],
+			'price': car[3] + '€',
+			'data': car[4],
 		})
 
 	return json
@@ -279,40 +280,48 @@ if __name__ == '__main__':
 	pp = pprint.PrettyPrinter(indent=2)
 
 	# provided
-	(diamonds, pendants) = (read_page(paths[0], True), read_page(paths[1], True))
-	(audi, volvo) = (read_page(paths[2], True), read_page(paths[3], True))
+	(diamonds, pendants) = (read_page(paths[0]), read_page(paths[1]))
+	(audi, volvo) = (read_page(paths[2]), read_page(paths[3]))
 
 	# chosen
 	(tesla, nvidia) = (read_page(paths[4]), read_page(paths[5]))
-	(bmwi3, arteon) = (read_page(paths[6], True), read_page(paths[7], True))
+	(bmwi3, arteon) = (read_page(paths[6]), read_page(paths[7]))
 
 
 	# overstock
 	print('--------------------------------')
 	print('--- Diamonds | overstock.com ---')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_overstock(diamonds))
+	print('\n==> XPATH')
 	pp.pprint(xp_overstock(diamonds))
 	print()
 
 	print('--------------------------------')
 	print('--- Pendants | overstock.com ---')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_overstock(pendants))
-	pp.pprint(re_overstock(diamonds))
+	print('\n==> XPATH')
+	pp.pprint(xp_overstock(pendants))
 	print()
 
 	# rtvslo
 	print('--------------------------------')
 	print('------- Audi | rtvslo.si -------')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_rtvslo(audi))
+	print('\n==> XPATH')
 	pp.pprint(xp_rtvslo(audi))
 
 	print('--------------------------------')
 	print('------ Volvo | rtvslo.si -------')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_rtvslo(volvo))
+	print('\n==> XPATH')
 	pp.pprint(xp_rtvslo(volvo))
 	print()
 
@@ -321,14 +330,18 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('------ Tesla | slotech.com -----')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_slotech(tesla))
+	print('\n==> XPATH')
 	pp.pprint(xp_slotech(tesla))
 	print()
 
 	print('--------------------------------')
 	print('----- Nvidia | slotech.com -----')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_slotech(nvidia))
+	print('\n==> XPATH')
 	pp.pprint(xp_slotech(nvidia))
 	print()
 
@@ -337,12 +350,16 @@ if __name__ == '__main__':
 	print('--------------------------------')
 	print('------- BMW i3 | avto.net ------')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_avtonet(bmwi3))
+	print('\n==> XPATH')
 	pp.pprint(xp_avtonet(bmwi3))
 	print()
 
 	print('--------------------------------')
 	print('------- Arteon | avto.net ------')
 	print('--------------------------------')
+	print('\n==> REGEX')
 	pp.pprint(re_avtonet(arteon))
+	print('\n==> XPATH')
 	pp.pprint(xp_avtonet(arteon))
