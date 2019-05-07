@@ -7,14 +7,14 @@ from bs4 import BeautifulSoup
 
 
 paths = [
-	'../pages/overstock.com/jewelry01.html',
-	'../pages/overstock.com/jewelry02.html',
-	'../pages/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html',
-	'../pages/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljs╠îe v razredu - RTVSLO.si.html',
-	'../pages/slo-tech.com/Musk zaradi afere s tvitom oglobljen z 20 milijoni dolarjev, odstopa kot prvi mož upravnega odbora @ Slo-Tech.htm',
-	'../pages/slo-tech.com/Nvidia lansirala Geforce GTX 1650 @ Slo-Tech.htm',
-	'../pages/avto.net/www.Avto.net  Največja ponudba BMW.htm',
-	'../pages/avto.net/www.Avto.net  Največja ponudba Volkswagen.htm'
+	'../input/overstock.com/jewelry01.html',
+	'../input/overstock.com/jewelry02.html',
+	'../input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html',
+	'../input/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljs╠îe v razredu - RTVSLO.si.html',
+	'../input/slo-tech.com/Musk zaradi afere s tvitom oglobljen z 20 milijoni dolarjev, odstopa kot prvi mož upravnega odbora @ Slo-Tech.htm',
+	'../input/slo-tech.com/Nvidia lansirala Geforce GTX 1650 @ Slo-Tech.htm',
+	'../input/avto.net/www.Avto.net  Največja ponudba BMW.htm',
+	'../input/avto.net/www.Avto.net  Največja ponudba Volkswagen.htm'
 ]
 
 
