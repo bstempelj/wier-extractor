@@ -1,0 +1,1573 @@
+--------------------------------
+--- Diamonds | overstock.com ---
+--------------------------------
+{ 'items': [ { 'content': 'This ladies fashion ring dazzles\n'
+                          'with hearts and diamonds. The gold band is crafted '
+                          'into delicate, open hearts.\n'
+                          'Seven brilliant-cut diamonds add a bit of sparkle. ',
+               'list_price': '$149.00',
+               'price': '$69.99',
+               'saving': '$79.01',
+               'saving_percent': '53%',
+               'title': '10-kt. Seven Diamond Ladies Heart Ring (0.08 TW)'},
+             { 'content': 'Nineteen round diamonds accent this 10-karat yellow '
+                          'gold ring with filigree accents.',
+               'list_price': '$250.00',
+               'price': '$74.90',
+               'saving': '$175.10',
+               'saving_percent': '70%',
+               'title': '10-Kt. Diamond Ring (.25 TW)'},
+             { 'content': 'Perfectly proportioned 5.5- to\n'
+                          '6-mm cultured pearls on 10-karat yellow gold '
+                          'settings highlight these petite\n'
+                          'earrings. A dainty rhodium-plated gold butterfly '
+                          'studded with a diamond (0.02\n'
+                          'total carat weight, J-K color, I-2 clarity) rests '
+                          'atop each pearl.',
+               'list_price': '$149.00',
+               'price': '$42.99',
+               'saving': '$106.01',
+               'saving_percent': '71%',
+               'title': '10-kt. Pearl and Diamond Butterfly Earrings'},
+             { 'content': 'Invest in a swirl of light with\n'
+                          "this diamond 'S' tennis bracelet. Crafted in "
+                          '14-karat gold, the piece features\n'
+                          '49 diamonds for two full carats. The 7.25-inch '
+                          'bracelet closes with a pressure\n'
+                          'clasp.',
+               'list_price': '$1,539.99',
+               'price': '$499.99',
+               'saving': '$1,040.00',
+               'saving_percent': '67%',
+               'title': "14-kt. Diamond 'S' Tennis Bracelet (2.00 TW)"},
+             { 'content': 'Crafted in white and yellow gold,\n'
+                          'this ring displays a band of seven round diamonds. '
+                          'Order your new gold and\n'
+                          'diamond fashion ring today at our low, online '
+                          'price.',
+               'list_price': '$179.99',
+               'price': '$79.99',
+               'saving': '$100.00',
+               'saving_percent': '55%',
+               'title': '10-kt. Diamond Band Fashion Ring (.11 TW)'},
+             { 'content': 'Show your romantic side with this\n'
+                          '14-karat diamond and pearl ring. Set in a domed '
+                          'band of 14-karat white gold,\n'
+                          'the ring features a 7-mm cultured pearl. Curved '
+                          'rows of diamonds flank the\n'
+                          'pearl.',
+               'list_price': '$419.99',
+               'price': '$149.99',
+               'saving': '$270.00',
+               'saving_percent': '64%',
+               'title': '14-kt. White Gold, Pearl and Diamond Ring'},
+             { 'content': 'Designed with three large, sparkling\n'
+                          'diamonds to represent past, present, and future, '
+                          'this stunning pendant is\n'
+                          'set in gleaming 14-karat gold. It incorporates a '
+                          'total of nine diamonds (0.25\n'
+                          'total carat weight, K color, I-2 to I-3 clarity).  ',
+               'list_price': '$299.00',
+               'price': '$149.99',
+               'saving': '$149.01',
+               'saving_percent': '49%',
+               'title': '14-kt. Gold Diamond Present Future Pendant (.25TW)'},
+             { 'content': 'In this simple, yet elegant pendant,\n'
+                          'a round brilliant diamond (0.33 total carat weight, '
+                          'H-J color, I-1 to I-2\n'
+                          'clarity) is prong-set in 14-karat white gold.',
+               'list_price': '$1,019.99',
+               'price': '$319.99',
+               'saving': '$700.00',
+               'saving_percent': '68%',
+               'title': '14-kt. Diamond Solitaire Pendant (.33 TW)'},
+             { 'content': 'Dazzle your way into her heart,\n'
+                          'with these classic diamond solitaire earrings. Two '
+                          'brilliant-cut diamonds\n'
+                          '(0.33 total carat weight, G-H color, I-1 to I-2 '
+                          'clarity) are set in four\n'
+                          'prongs of 14-karat white gold.',
+               'list_price': '$639.99',
+               'price': '$199.99',
+               'saving': '$440.00',
+               'saving_percent': '68%',
+               'title': '14-kt. Diamond Solitaire Earrings (0.33 TW)'},
+             { 'content': 'Over a cleanly sculpted Roman\n'
+                          'cross of 14-karat white gold drapes a slender '
+                          'banner containing three bright\n'
+                          'prong-set round diamonds (0.06 total carat weight, '
+                          'H-I color, I clarity).',
+               'list_price': '$305.00',
+               'price': '$119.99',
+               'saving': '$185.01',
+               'saving_percent': '60%',
+               'title': '14-kt. Diamond Cross Pendant (.06 TW)'},
+             { 'content': 'Every jewelry collection needs\n'
+                          'a classic pair of diamond solitaire earrings. Set '
+                          'in 14-karat gold, these\n'
+                          'diamond stud earrings (0.50 total carat weight) '
+                          'have post backs with butterfly\n'
+                          'clasps.',
+               'list_price': '$999.99',
+               'price': '$359.99',
+               'saving': '$640.00',
+               'saving_percent': '64%',
+               'title': '14-kt. Diamond Solitaire Stud Earrings (.50 TW)'},
+             { 'content': 'Create an elegant appearance with\n'
+                          'these pearl and diamond stud earrings. Set in '
+                          '14-karat yellow gold, each\n'
+                          'earring features an 8 to 8.5-mm cultured white '
+                          'pearl. Prong-set round diamonds\n'
+                          'accent the pearls. Posts with butterfly clasps '
+                          'secure the earrings.',
+               'list_price': '$508.99',
+               'price': '$179.99',
+               'saving': '$329.00',
+               'saving_percent': '64%',
+               'title': '14-kt. Cultured Pearl Diamond Earrings'},
+             { 'content': 'Add a classic to your jewelry\n'
+                          'collection with this 14-karat gold, diamond, and '
+                          'pearl necklace. The 7.5-8\n'
+                          'mm cultured white pearl creates the focal point of '
+                          'the pendant, while a diamond\n'
+                          '(0.10 TW) adds sparkle.',
+               'list_price': '$196.99',
+               'price': '$69.99',
+               'saving': '$127.00',
+               'saving_percent': '64%',
+               'title': '14-kt. Diamond 7.5-8 mm Pearl Pendant'},
+             { 'content': 'This earring set has two brilliant-cut\n'
+                          'diamonds (0.50 total carat weight, G-H color, I-1 '
+                          'to I-2 clarity) set in\n'
+                          'four prongs of 14-karat white gold.',
+               'list_price': '$1,369.99',
+               'price': '$409.99',
+               'saving': '$960.00',
+               'saving_percent': '70%',
+               'title': '14-kt. Diamond Solitaire Earrings (.50 TW)'},
+             { 'content': 'Crafted of 14-karat white gold,\n'
+                          'this stylish ring features a bright row of 20 '
+                          'channel-set, princess-cut baguette\n'
+                          'diamonds. Treat her like royalty and save when you '
+                          'buy jewelry treasures\n'
+                          'at Overstock.com.',
+               'list_price': '$1,635.00',
+               'price': '$609.99',
+               'saving': '$1,025.01',
+               'saving_percent': '62%',
+               'title': '14-kt White Gold Diamond Band (0.50 TW)'}]}
+None
+
+--------------------------------
+--- Pendants | overstock.com ---
+--------------------------------
+{ 'items': [ { 'content': 'Hoops of cool green jade rest\n'
+                          'between 14-karat yellow gold endpieces. The hoops '
+                          'graduate in thickness from\n'
+                          '3 mm at the ends to 6 mm in the center, with '
+                          'approximately 29 mm overall\n'
+                          'diameter.',
+               'list_price': '$90.00',
+               'price': '$46.99',
+               'saving': '$43.01',
+               'saving_percent': '47%',
+               'title': '14-kt. Green Jade Hoops'},
+             { 'content': 'The 25-mm disk hangs delicately\n'
+                          'from a 14-karat gold chain. The disk features a '
+                          'dramatic gold Chinese character\n'
+                          'in the center, accompanied by four stylized gold '
+                          'bees.',
+               'list_price': '$150.00',
+               'price': '$48.99',
+               'saving': '$101.01',
+               'saving_percent': '67%',
+               'title': '14-kt. Jade Doughnut Pendant'},
+             { 'content': 'Carved of rich dark grey jade,\n'
+                          'this elephant pendant has 14-karat yellow gold '
+                          'applied to mark the feet,\n'
+                          'tusk, tail, and blanket. A 2-mm round faceted ruby '
+                          'in a gold bezel setting\n'
+                          'forms the eye. The pendant hangs from an 18-inch '
+                          'chain.',
+               'list_price': '$100.00',
+               'price': '$28.99',
+               'saving': '$71.01',
+               'saving_percent': '71%',
+               'title': '14-kt. Charcoal Jade and Ruby Elephant Pendant'},
+             { 'content': 'Luscious 8-mm lavender jade balls, carved with '
+                          'intricate Asian style, dangle from a 14-karat '
+                          'yellow gold French hook.',
+               'list_price': '$80.00',
+               'price': '$39.99',
+               'saving': '$40.01',
+               'saving_percent': '50%',
+               'title': '14-kt. Carved Lavender Jade Earrings'},
+             { 'content': 'Green jade and gold create this\n'
+                          'beautiful cross pendant. Cylindrical bars of green '
+                          'jade feature caps and\n'
+                          'center of 14-karat yellow gold.',
+               'list_price': '$150.00',
+               'price': '$49.99',
+               'saving': '$100.01',
+               'saving_percent': '66%',
+               'title': '14-kt. Jade Cross Pendant'},
+             { 'content': 'A delicate wrapping of 14-karat\n'
+                          'yellow gold wire holds six 6 x 4 pear shapes of '
+                          'jade in various shades: brilliant\n'
+                          'green, orange, lavender, black, pale yellow, and '
+                          'white. The post earrings\n'
+                          'have butterfly backs.',
+               'list_price': '$375.00',
+               'price': '$99.99',
+               'saving': '$275.01',
+               'saving_percent': '73%',
+               'title': '14-kt. Multicolored Jade Earrings'},
+             { 'content': 'A delicate wrapping of 14-karat\n'
+                          'yellow gold wire holds six 6 x 4 ovals of jade in '
+                          'various shades: brilliant\n'
+                          'green, orange, lavender, black, pale yellow, and '
+                          'white. A narrow gold band\n'
+                          'divides to support the setting.',
+               'list_price': '$250.00',
+               'price': '$56.99',
+               'saving': '$193.01',
+               'saving_percent': '77%',
+               'title': '14-kt. Multicolored Jade Ring'},
+             { 'content': 'Carved of rich black onyx, this\n'
+                          'elephant pendant has 14-karat yellow gold applied '
+                          'to mark the feet, tusk,\n'
+                          'tail, and blanket. A 2-mm round faceted ruby in a '
+                          'gold bezel setting forms\n'
+                          'the eye. The pendant hangs from an 18-inch chain.',
+               'list_price': '$100.00',
+               'price': '$35.99',
+               'saving': '$64.01',
+               'saving_percent': '64%',
+               'title': '14-kt. Onyx and Ruby Elephant Pendant'}]}
+{ 'items': [ { 'content': 'This ladies fashion ring dazzles\n'
+                          'with hearts and diamonds. The gold band is crafted '
+                          'into delicate, open hearts.\n'
+                          'Seven brilliant-cut diamonds add a bit of sparkle. ',
+               'list_price': '$149.00',
+               'price': '$69.99',
+               'saving': '$79.01',
+               'saving_percent': '53%',
+               'title': '10-kt. Seven Diamond Ladies Heart Ring (0.08 TW)'},
+             { 'content': 'Nineteen round diamonds accent this 10-karat yellow '
+                          'gold ring with filigree accents.',
+               'list_price': '$250.00',
+               'price': '$74.90',
+               'saving': '$175.10',
+               'saving_percent': '70%',
+               'title': '10-Kt. Diamond Ring (.25 TW)'},
+             { 'content': 'Perfectly proportioned 5.5- to\n'
+                          '6-mm cultured pearls on 10-karat yellow gold '
+                          'settings highlight these petite\n'
+                          'earrings. A dainty rhodium-plated gold butterfly '
+                          'studded with a diamond (0.02\n'
+                          'total carat weight, J-K color, I-2 clarity) rests '
+                          'atop each pearl.',
+               'list_price': '$149.00',
+               'price': '$42.99',
+               'saving': '$106.01',
+               'saving_percent': '71%',
+               'title': '10-kt. Pearl and Diamond Butterfly Earrings'},
+             { 'content': 'Invest in a swirl of light with\n'
+                          "this diamond 'S' tennis bracelet. Crafted in "
+                          '14-karat gold, the piece features\n'
+                          '49 diamonds for two full carats. The 7.25-inch '
+                          'bracelet closes with a pressure\n'
+                          'clasp.',
+               'list_price': '$1,539.99',
+               'price': '$499.99',
+               'saving': '$1,040.00',
+               'saving_percent': '67%',
+               'title': "14-kt. Diamond 'S' Tennis Bracelet (2.00 TW)"},
+             { 'content': 'Crafted in white and yellow gold,\n'
+                          'this ring displays a band of seven round diamonds. '
+                          'Order your new gold and\n'
+                          'diamond fashion ring today at our low, online '
+                          'price.',
+               'list_price': '$179.99',
+               'price': '$79.99',
+               'saving': '$100.00',
+               'saving_percent': '55%',
+               'title': '10-kt. Diamond Band Fashion Ring (.11 TW)'},
+             { 'content': 'Show your romantic side with this\n'
+                          '14-karat diamond and pearl ring. Set in a domed '
+                          'band of 14-karat white gold,\n'
+                          'the ring features a 7-mm cultured pearl. Curved '
+                          'rows of diamonds flank the\n'
+                          'pearl.',
+               'list_price': '$419.99',
+               'price': '$149.99',
+               'saving': '$270.00',
+               'saving_percent': '64%',
+               'title': '14-kt. White Gold, Pearl and Diamond Ring'},
+             { 'content': 'Designed with three large, sparkling\n'
+                          'diamonds to represent past, present, and future, '
+                          'this stunning pendant is\n'
+                          'set in gleaming 14-karat gold. It incorporates a '
+                          'total of nine diamonds (0.25\n'
+                          'total carat weight, K color, I-2 to I-3 clarity).  ',
+               'list_price': '$299.00',
+               'price': '$149.99',
+               'saving': '$149.01',
+               'saving_percent': '49%',
+               'title': '14-kt. Gold Diamond Present Future Pendant (.25TW)'},
+             { 'content': 'In this simple, yet elegant pendant,\n'
+                          'a round brilliant diamond (0.33 total carat weight, '
+                          'H-J color, I-1 to I-2\n'
+                          'clarity) is prong-set in 14-karat white gold.',
+               'list_price': '$1,019.99',
+               'price': '$319.99',
+               'saving': '$700.00',
+               'saving_percent': '68%',
+               'title': '14-kt. Diamond Solitaire Pendant (.33 TW)'},
+             { 'content': 'Dazzle your way into her heart,\n'
+                          'with these classic diamond solitaire earrings. Two '
+                          'brilliant-cut diamonds\n'
+                          '(0.33 total carat weight, G-H color, I-1 to I-2 '
+                          'clarity) are set in four\n'
+                          'prongs of 14-karat white gold.',
+               'list_price': '$639.99',
+               'price': '$199.99',
+               'saving': '$440.00',
+               'saving_percent': '68%',
+               'title': '14-kt. Diamond Solitaire Earrings (0.33 TW)'},
+             { 'content': 'Over a cleanly sculpted Roman\n'
+                          'cross of 14-karat white gold drapes a slender '
+                          'banner containing three bright\n'
+                          'prong-set round diamonds (0.06 total carat weight, '
+                          'H-I color, I clarity).',
+               'list_price': '$305.00',
+               'price': '$119.99',
+               'saving': '$185.01',
+               'saving_percent': '60%',
+               'title': '14-kt. Diamond Cross Pendant (.06 TW)'},
+             { 'content': 'Every jewelry collection needs\n'
+                          'a classic pair of diamond solitaire earrings. Set '
+                          'in 14-karat gold, these\n'
+                          'diamond stud earrings (0.50 total carat weight) '
+                          'have post backs with butterfly\n'
+                          'clasps.',
+               'list_price': '$999.99',
+               'price': '$359.99',
+               'saving': '$640.00',
+               'saving_percent': '64%',
+               'title': '14-kt. Diamond Solitaire Stud Earrings (.50 TW)'},
+             { 'content': 'Create an elegant appearance with\n'
+                          'these pearl and diamond stud earrings. Set in '
+                          '14-karat yellow gold, each\n'
+                          'earring features an 8 to 8.5-mm cultured white '
+                          'pearl. Prong-set round diamonds\n'
+                          'accent the pearls. Posts with butterfly clasps '
+                          'secure the earrings.',
+               'list_price': '$508.99',
+               'price': '$179.99',
+               'saving': '$329.00',
+               'saving_percent': '64%',
+               'title': '14-kt. Cultured Pearl Diamond Earrings'},
+             { 'content': 'Add a classic to your jewelry\n'
+                          'collection with this 14-karat gold, diamond, and '
+                          'pearl necklace. The 7.5-8\n'
+                          'mm cultured white pearl creates the focal point of '
+                          'the pendant, while a diamond\n'
+                          '(0.10 TW) adds sparkle.',
+               'list_price': '$196.99',
+               'price': '$69.99',
+               'saving': '$127.00',
+               'saving_percent': '64%',
+               'title': '14-kt. Diamond 7.5-8 mm Pearl Pendant'},
+             { 'content': 'This earring set has two brilliant-cut\n'
+                          'diamonds (0.50 total carat weight, G-H color, I-1 '
+                          'to I-2 clarity) set in\n'
+                          'four prongs of 14-karat white gold.',
+               'list_price': '$1,369.99',
+               'price': '$409.99',
+               'saving': '$960.00',
+               'saving_percent': '70%',
+               'title': '14-kt. Diamond Solitaire Earrings (.50 TW)'},
+             { 'content': 'Crafted of 14-karat white gold,\n'
+                          'this stylish ring features a bright row of 20 '
+                          'channel-set, princess-cut baguette\n'
+                          'diamonds. Treat her like royalty and save when you '
+                          'buy jewelry treasures\n'
+                          'at Overstock.com.',
+               'list_price': '$1,635.00',
+               'price': '$609.99',
+               'saving': '$1,025.01',
+               'saving_percent': '62%',
+               'title': '14-kt White Gold Diamond Band (0.50 TW)'}]}
+
+--------------------------------
+------- Audi | rtvslo.si -------
+--------------------------------
+{ 'author': 'Miha Merljak',
+  'content': 'Samo poglejte njegovo masko â\x80\x93 to ogromno satovje z '
+             'radarji na takem poloÅ¾aju, da se ti na avtocesti tudi pri 120 '
+             'km/h vsi spoÅ¡tljivo umikajo, saj so prepriÄ\x8dani, da gre za '
+             'Pahorjev ali Å\xa0arÄ\x8dev avto. Seveda, novi A6 lahko cesto in '
+             'promet skenira s kar petimi radarji, petimi kamerami, '
+             'infrardeÄ\x8do kamero za noÄ\x8dni vid, dvanajstimi '
+             'ultrazvoÄ\x8dnimi senzorji in laserskim Ä\x8ditalnikom â\x80\x93 '
+             'lidarjem. V glavnem vojaÅ¡ka tehnologija v sluÅ¾bi varnosti za '
+             'fante, ki smo radi gledali Top Gun, Bonda in druge moÅ¾akarja s '
+             'finimi igraÄ\x8dami.Novo poglavjeVozniÅ¡ki delovni prostor je '
+             'novo poglavje digitalne dobe, z dvema ogromnima zaslonoma, ki '
+             'tako kot naprednejÅ¡i telefoni dregnejo blazinice vaÅ¡ih prstov, '
+             'kot se sprehajate po steklu. A Å¡e bolj se nam zdi pomembno, da '
+             'so osnovna stikala tam, kjer jih priÄ\x8dakujete. Najprej so '
+             'torej zagotovili enostavno osnovo, tisti bolj "advanced" vozniki '
+             'pa si lahko nato vse skupaj Å¡e veliko bolj prilagodijo. Velik '
+             'korak naprej pri kabinskem udobju zaznavajo tudi na zadnji '
+             'klopi, tam je prostora v vseh smereh precej veÄ\x8d.Ä\x8ce vam '
+             'pogled na Audijev spisek dodatne opreme ne odvzame volje do '
+             'Å¾ivljenja, potem vsekakor toplo priporoÄ\x8damo nakup '
+             'zraÄ\x8dnega vzmetenja, saj dobi z njim A6 veÄ\x8d razliÄ\x8dnih '
+             'in vozniÅ¡ko zelo uporabnih karakterjev.Enako velja za seksi '
+             'luÄ\x8di z inteligentno matriÄ\x8dno osvetlitvijo, pa za '
+             'Å¡portno podvozje in vsekakor za Å¡tirikolesno krmiljenje. S tem '
+             'postane A6 med ovinki v obÄ\x8dutku na volanu Å¡e veliko krajÅ¡i '
+             'in bolj agilen. Vse naÅ¡teto smo preskuÅ¡ali v druÅ¾bi agregata '
+             '50 TDI, ki je v resnici klasiÄ\x8dni trilitrski dizel, '
+             'podkrepljen z elektromotorjem. Ja, ta audi je mehki hibrid z '
+             'izjemnim navorom in dovolj moÄ\x8di kadar koli in kjer koli. Si '
+             'pa mislimo, da bo najveÄ\x8dji del trga zadovoljil Å¾e '
+             'uÄ\x8dinkovit dvolitrski mehki hibrid z moÄ\x8djo 150 '
+             'kilovatov.KljuÄ\x8dni tehniÄ\x8dni podatki:- na testu Audi A6 50 '
+             'TDI quattro tiptronicMere:- dolÅ¾ina: 4,9 m- medosna razdalja: '
+             '2,9 m- obraÄ\x8dalni krog: 12,1 m- prtljaÅ¾nik: 530 l- masa: '
+             '1.900 kgPogon:- trilitrski Å¡estvaljni dizelski motor- moÄ\x8d: '
+             '210 kW- navor: 620 Nm- 8-stopenjski samodejni menjalnik- pogon '
+             'na vsa Å¡tiri kolesa- pnevmatike: 225/60 R17- poraba: 6,6 l/100 '
+             'km = 8,9 EUR/100 km- posoda za gorivo: 73 l- doseg: 1.106 km- '
+             'izpusti CO2: 147 g/kmStroÅ¡ki pri 15.000 km in 5-letni uporabi:- '
+             'nakupna cena: 69.080 EUR- stroÅ¡ki finanÄ\x8dnega lizinga: 4.463 '
+             'EUR/5 let- stroÅ¡ki registracije: 10.829 EUR/5 let- stroÅ¡ki '
+             'vzdrÅ¾evanja: 1.926 EUR/5 let- stroÅ¡ki goriva: 6.702 EUR/75.000 '
+             'km- stroÅ¡ek 1 kompleta pnevmatik: 716 EUR- vrednosti po 5 letih '
+             'po Eurotaxu: 33.964 EUR- stroÅ¡ki skupaj: 1.001 EUR/mesec',
+  'lead': 'To je novi audi A6. V razred najdraÅ¾jih in najbolj premijskih '
+          'Å¾rebcev je vnesel nemir, Å¡e preden je sploh zapeljal na parkirni '
+          'prostor, rezerviran za izvrÅ¡nega direktorja. ',
+  'published_time': '28. december 2018 ob 08:51',
+  'subtitle': 'Test nove generacije',
+  'title': 'Audi A6 50 TDI quattro: nemir v premijskem razredu'}
+{ 'author': 'Miha Merljak',
+  'content': 'Samo poglejte njegovo masko â\x80\x93 to ogromno satovje z '
+             'radarji na takem poloÅ¾aju, da se ti na avtocesti tudi pri 120 '
+             'km/h vsi spoÅ¡tljivo umikajo, saj so prepriÄ\x8dani, da gre za '
+             'Pahorjev ali Å\xa0arÄ\x8dev avto. Seveda, novi A6 lahko cesto in '
+             'promet skenira s kar petimi radarji, petimi kamerami, '
+             'infrardeÄ\x8do kamero za noÄ\x8dni vid, dvanajstimi '
+             'ultrazvoÄ\x8dnimi senzorji in laserskim Ä\x8ditalnikom â\x80\x93 '
+             'lidarjem. V glavnem vojaÅ¡ka tehnologija v sluÅ¾bi varnosti za '
+             'fante, ki smo radi gledali Top Gun, Bonda in druge moÅ¾akarja s '
+             'finimi igraÄ\x8dami.VozniÅ¡ki delovni prostor je novo poglavje '
+             'digitalne dobe, z dvema ogromnima zaslonoma, ki tako kot '
+             'naprednejÅ¡i telefoni dregnejo blazinice vaÅ¡ih prstov, kot se '
+             'sprehajate po steklu. A Å¡e bolj se nam zdi pomembno, da so '
+             'osnovna stikala tam, kjer jih priÄ\x8dakujete. Najprej so torej '
+             'zagotovili enostavno osnovo, tisti bolj "advanced" vozniki pa si '
+             'lahko nato vse skupaj Å¡e veliko bolj prilagodijo. Velik korak '
+             'naprej pri kabinskem udobju zaznavajo tudi na zadnji klopi, tam '
+             'je prostora v vseh smereh precej veÄ\x8d.Ä\x8ce vam pogled na '
+             'Audijev spisek dodatne opreme ne odvzame volje do Å¾ivljenja, '
+             'potem vsekakor toplo priporoÄ\x8damo nakup zraÄ\x8dnega '
+             'vzmetenja, saj dobi z njim A6 veÄ\x8d razliÄ\x8dnih in vozniÅ¡ko '
+             'zelo uporabnih karakterjev.Enako velja za seksi luÄ\x8di z '
+             'inteligentno matriÄ\x8dno osvetlitvijo, pa za Å¡portno podvozje '
+             'in vsekakor za Å¡tirikolesno krmiljenje. S tem postane A6 med '
+             'ovinki v obÄ\x8dutku na volanu Å¡e veliko krajÅ¡i in bolj '
+             'agilen. Vse naÅ¡teto smo preskuÅ¡ali v druÅ¾bi agregata 50 TDI, '
+             'ki je v resnici klasiÄ\x8dni trilitrski dizel, podkrepljen z '
+             'elektromotorjem. Ja, ta audi je mehki hibrid z izjemnim navorom '
+             'in dovolj moÄ\x8di kadar koli in kjer koli. Si pa mislimo, da bo '
+             'najveÄ\x8dji del trga zadovoljil Å¾e uÄ\x8dinkovit dvolitrski '
+             'mehki hibrid z moÄ\x8djo 150 kilovatov.- na testu Audi A6 50 TDI '
+             'quattro tiptronic- dolÅ¾ina: 4,9 m- medosna razdalja: 2,9 m- '
+             'obraÄ\x8dalni krog: 12,1 m- prtljaÅ¾nik: 530 l- masa: 1.900 kg- '
+             'trilitrski Å¡estvaljni dizelski motor- moÄ\x8d: 210 kW- navor: '
+             '620 Nm- 8-stopenjski samodejni menjalnik- pogon na vsa Å¡tiri '
+             'kolesa- pnevmatike: 225/60 R17- poraba: 6,6 l/100 km = 8,9 '
+             'EUR/100 km- posoda za gorivo: 73 l- doseg: 1.106 km- izpusti CO: '
+             '147 g/km- nakupna cena: 69.080 EUR- stroÅ¡ki finanÄ\x8dnega '
+             'lizinga: 4.463 EUR/5 let- stroÅ¡ki registracije: 10.829 EUR/5 '
+             'let- stroÅ¡ki vzdrÅ¾evanja: 1.926 EUR/5 let- stroÅ¡ki goriva: '
+             '6.702 EUR/75.000 km- stroÅ¡ek 1 kompleta pnevmatik: 716 EUR- '
+             'vrednosti po 5 letih po Eurotaxu: 33.964 EUR- stroÅ¡ki skupaj: '
+             '1.001 EUR/mesec',
+  'lead': 'To je novi audi A6. V razred najdraÅ¾jih in najbolj premijskih '
+          'Å¾rebcev je vnesel nemir, Å¡e preden je sploh zapeljal na parkirni '
+          'prostor, rezerviran za izvrÅ¡nega direktorja.',
+  'published_time': '28. december 2018 ob 08:51',
+  'subtitle': 'Test nove generacije',
+  'title': 'Audi A6 50 TDI quattro: nemir v premijskem razredu'}
+--------------------------------
+------ Volvo | rtvslo.si -------
+--------------------------------
+{ 'author': 'Miha Merljak',
+  'content': 'Volvo se je niÅ¾jih srednjih razredov v preteklosti izogibal ali '
+             'pa je vanje vstopal z zelo niÅ¡nimi produkti, ki niso pustili '
+             'veÄ\x8djega trÅ¾nega peÄ\x8data. V primeru XC 40 ni teÅ¾ko '
+             'napovedati, da bo ta tradicija prekinjena. Ponuja namreÄ\x8d '
+             'visoko kakovost konÄ\x8dne izdelave in v kabini odliÄ\x8dno '
+             'premiÅ¡ljeno funkcionalnost ter na dotik prijetne materiale. '
+             'Å\xa0e posebej hvalimo Å¡tevilo, iznajdljivost in velikost '
+             'razliÄ\x8dnih odlagalnih prostorov ter Å¡iroke, Ä\x8dvrste in '
+             'zelo udobne sedeÅ¾e. Intuitivno in enostavno logiÄ\x8dno je '
+             'upravljanje z velikim vmesnikom, ki z veÄ\x8dfunkcijskim '
+             'zaslonom na dotik kraljuje na z roko lahko dostopnem mestu na '
+             'sredinski armaturi. RazoÄ\x8daranj ne bo niti v velikosti in '
+             'uporabnosti prtljaÅ¾nega prostora, ki s 460 litri prostornine '
+             'sicer ni med veÄ\x8djimi v razredu, a se v uporabniÅ¡kem smislu '
+             'odkupi z dobro urejenostjo ter domiselnimi reÅ¡itvami '
+             'pregrajevanja.XC 40 je od tal odmaknjen konkretnih 21 cm, a sta '
+             'vzmetenje in krmilni mehanizem tako nastavljena, da ponuja tudi '
+             'v hitro odpeljanih ovinkih zelo dolgo nevtralno in predvidljivo '
+             'lego. V premeru preskuÅ¡anega modela, ki je imel v paketu R '
+             'design vzmetenje Å¡e nekoliko bolj trdo, se je to samo Å¡e bolj '
+             'potrdilo, a je v tem primeru treba raÄ\x8dunati na manj udobno '
+             'voÅ¾njo Ä\x8dez razliÄ\x8dne asfaltne grbine. Podoben razmislek '
+             'velja opraviti tudi pri izbiri motorja.PreskuÅ¡ani 2-litrski '
+             'dizel s 190 KM predstavlja vrh ponudbe, ki z moÄ\x8djo, udobjem '
+             'in tudi povpreÄ\x8dno porabo navduÅ¡i predvsem pri avtocestnih '
+             'dolgoprogaÅ¡kih izzivih, v poÄ\x8dasni mestni voÅ¾nji ter pri '
+             'pogostih postankih in speljevanjih pa deluje preveÄ\x8d '
+             'robusten.XC 40 je s Ä\x8dvrsto gradnjo, funkcionalno in udobno '
+             'kabino ter Å¡tevilnimi asistenÄ\x8dnimi sistemi in '
+             'izstopajoÄ\x8dim skandinavskim dizajnom v premiÅ¡ljenem trenutku '
+             'vstopil na trg modnih mestnih terencev, v katerem se brez ene '
+             'same sence dvoma suvereno postavi med najdraÅ¾je in najbolj '
+             'premijske v mestu.KljuÄ\x8dni tehniÄ\x8dni podatki:- na testu '
+             'Volvo XC40 2.0 TD avt awd momentumMere:- dolÅ¾ina: 4,4 m- '
+             'medosna razdalja: 2,7 m- obraÄ\x8dalni krog: 11,4 m- oddaljenost '
+             'od tal: 21 cm- prtljaÅ¾nik: 432 l- masa: 2.250 kgPogon:- '
+             '2-litrski 4-valjni bencinski motor- moÄ\x8d: 140 kW- navor: 400 '
+             'Nm- 8-stopenjski samodejni menjalnik- pogon na vsa Å¡tiri '
+             'kolesa- pnevmatike: 235/50 R19 - poraba: 6,3 l/100 km = 8,2 '
+             'EUR/100km- posoda za gorivo: 54 l- doseg: 857 km- izpusti CO2: '
+             '133 g/kmStroÅ¡ki pri 15.000 km in 5-letni uporabi:- nakupna '
+             'cena: 43.619 EUR- stroÅ¡ki finanÄ\x8dnega leasinga: 3.268 EUR/5 '
+             'let- stroÅ¡ki registracije: 8.701 EUR/5 let- stroÅ¡ki '
+             'vzdrÅ¾evanja: 2.320 EUR/5 let- stroÅ¡ki goriva: 6.190 EUR/75.000 '
+             'km- stroÅ¡ek 1 kompleta pnevmatik: 923 EUR- vrednosti po 5 letih '
+             'po Eurotaxu: 18.886 EUR- stroÅ¡ki skupaj: 774 EUR/mesec',
+  'lead': 'XC 40 je najmanjÅ¡i Volvov SUV, ki se oblikovno skoraj v celotni '
+          'naslanja na oba veÄ\x8dja predhodnika. Å½e samo s tem so mu vrata '
+          'do denarnic tistih kupcev, ki iÅ¡Ä\x8dejo izstopajoÄ\x8do, a hkrati '
+          'visoko kultivirano in preÄ\x8diÅ¡Ä\x8deno dizajnersko govorico, na '
+          'pol odprta.',
+  'published_time': '25. januar 2019 ob 15:23',
+  'subtitle': 'Test novega modela',
+  'title': 'Volvo XC 40 D4 AWD momentum: suvereno med najboljÅ¡e v razredu'}
+{ 'author': 'Miha Merljak',
+  'content': 'Volvo se je niÅ¾jih srednjih razredov v preteklosti izogibal ali '
+             'pa je vanje vstopal z zelo niÅ¡nimi produkti, ki niso pustili '
+             'veÄ\x8djega trÅ¾nega peÄ\x8data. V primeru XC 40 ni teÅ¾ko '
+             'napovedati, da bo ta tradicija prekinjena. Ponuja namreÄ\x8d '
+             'visoko kakovost konÄ\x8dne izdelave in v kabini odliÄ\x8dno '
+             'premiÅ¡ljeno funkcionalnost ter na dotik prijetne materiale. '
+             'Å\xa0e posebej hvalimo Å¡tevilo, iznajdljivost in velikost '
+             'razliÄ\x8dnih odlagalnih prostorov ter Å¡iroke, Ä\x8dvrste in '
+             'zelo udobne sedeÅ¾e. Intuitivno in enostavno logiÄ\x8dno je '
+             'upravljanje z velikim vmesnikom, ki z veÄ\x8dfunkcijskim '
+             'zaslonom na dotik kraljuje na z roko lahko dostopnem mestu na '
+             'sredinski armaturi. RazoÄ\x8daranj ne bo niti v velikosti in '
+             'uporabnosti prtljaÅ¾nega prostora, ki s 460 litri prostornine '
+             'sicer ni med veÄ\x8djimi v razredu, a se v uporabniÅ¡kem smislu '
+             'odkupi z dobro urejenostjo ter domiselnimi reÅ¡itvami '
+             'pregrajevanja.XC 40 je od tal odmaknjen konkretnih 21 cm, a sta '
+             'vzmetenje in krmilni mehanizem tako nastavljena, da ponuja tudi '
+             'v hitro odpeljanih ovinkih zelo dolgo nevtralno in predvidljivo '
+             'lego. V premeru preskuÅ¡anega modela, ki je imel v paketu R '
+             'design vzmetenje Å¡e nekoliko bolj trdo, se je to samo Å¡e bolj '
+             'potrdilo, a je v tem primeru treba raÄ\x8dunati na manj udobno '
+             'voÅ¾njo Ä\x8dez razliÄ\x8dne asfaltne grbine. Podoben razmislek '
+             'velja opraviti tudi pri izbiri motorja.PreskuÅ¡ani 2-litrski '
+             'dizel s 190 KM predstavlja vrh ponudbe, ki z moÄ\x8djo, udobjem '
+             'in tudi povpreÄ\x8dno porabo navduÅ¡i predvsem pri avtocestnih '
+             'dolgoprogaÅ¡kih izzivih, v poÄ\x8dasni mestni voÅ¾nji ter pri '
+             'pogostih postankih in speljevanjih pa deluje preveÄ\x8d '
+             'robusten.XC 40 je s Ä\x8dvrsto gradnjo, funkcionalno in udobno '
+             'kabino ter Å¡tevilnimi asistenÄ\x8dnimi sistemi in '
+             'izstopajoÄ\x8dim skandinavskim dizajnom v premiÅ¡ljenem trenutku '
+             'vstopil na trg modnih mestnih terencev, v katerem se brez ene '
+             'same sence dvoma suvereno postavi med najdraÅ¾je in najbolj '
+             'premijske v mestu.- na testu Volvo XC40 2.0 TD avt awd '
+             'momentumMere:- dolÅ¾ina: 4,4 m- medosna razdalja: 2,7 m- '
+             'obraÄ\x8dalni krog: 11,4 m- oddaljenost od tal: 21 cm- '
+             'prtljaÅ¾nik: 432 l- masa: 2.250 kgPogon:- 2-litrski 4-valjni '
+             'bencinski motor- moÄ\x8d: 140 kW- navor: 400 Nm- 8-stopenjski '
+             'samodejni menjalnik- pogon na vsa Å¡tiri kolesa- pnevmatike: '
+             '235/50 R19 - poraba: 6,3 l/100 km = 8,2 EUR/100km- posoda za '
+             'gorivo: 54 l- doseg: 857 km- izpusti CO2: 133 g/kmStroÅ¡ki pri '
+             '15.000 km in 5-letni uporabi:- nakupna cena: 43.619 EUR- '
+             'stroÅ¡ki finanÄ\x8dnega leasinga: 3.268 EUR/5 let- stroÅ¡ki '
+             'registracije: 8.701 EUR/5 let- stroÅ¡ki vzdrÅ¾evanja: 2.320 '
+             'EUR/5 let- stroÅ¡ki goriva: 6.190 EUR/75.000 km- stroÅ¡ek 1 '
+             'kompleta pnevmatik: 923 EUR- vrednosti po 5 letih po Eurotaxu: '
+             '18.886 EUR- stroÅ¡ki skupaj: 774 EUR/mesec',
+  'lead': 'XC 40 je najmanjÅ¡i Volvov SUV, ki se oblikovno skoraj v celotni '
+          'naslanja na oba veÄ\x8dja predhodnika. Å½e samo s tem so mu vrata '
+          'do denarnic tistih kupcev, ki iÅ¡Ä\x8dejo izstopajoÄ\x8do, a hkrati '
+          'visoko kultivirano in preÄ\x8diÅ¡Ä\x8deno dizajnersko govorico, na '
+          'pol odprta.',
+  'published_time': '25. januar 2019 ob 15:23',
+  'subtitle': 'Test novega modela',
+  'title': 'Volvo XC 40 D4 AWD momentum: suvereno med najboljÅ¡e v razredu'}
+
+--------------------------------
+------ Tesla | slotech.com -----
+--------------------------------
+{ 'author': 'Matej Hu¹',
+  'category': 'To¾be',
+  'content': 'Elon Musk se je poravnal z ameri¹ko agencijo za trg vrednostnih '
+             'papirjev (SEC), ki je avgusta zaèela preiskavo zaradi sporne '
+             'objave na Twitterju.  Musk, ki je tedaj brez utemeljitve trdil, '
+             'da bodo Teslo odkupili in da  je financiranje po ceni 420 '
+             'dolarjev na delnico ¾e zagotovljeno, je s  tem najprej poskrbel '
+             'za rast cene delnice Tesle, kar je imelo finanène  posledice za '
+             'prodajalce na kratko, kasneje pa je delnica izgubila ¹e veè  '
+             'vrednosti, ko se je razvedela neoprijemljivost Muskovih trditev. '
+             'Elon  Musk bo plaèal 20 milijonov dolarjev globe,  a bo lahko '
+             'ostal na èelu podjetja. Poravnava je bila prièakovana, saj  je '
+             'SEC Muska sodno preganjal, ko ta ni pristal na prvo poravnavo, '
+             'v  takih postopkih pa SEC praviloma zmaga.  Poravnava doloèa,  '
+             'da Musku ni treba priznati nobenega nezakonitega ravnanja, da '
+             'morata  Tesla in Musk plaèati vsak 20 milijonov dolarjev globe, '
+             'da Musk lahko  ostane izvr¹ni direktor, ne sme pa biti v '
+             'naslednjih treh letih  predsednik upravnega odbora. Prav tako '
+             'mora upravni odbor imenovati dva  nova èlana. Glavni oèitek '
+             'podjetju samemu je neobstoj postopkov in  kontrolnih mehanizmov '
+             'za komuniciranje z javnostmi prek Muskovega  Twitterjevega '
+             'raèuna. Z drugimi besedami: Tesla ne bi bila smela  dovoliti '
+             'Musku, da brez odobritve in védenja podjetja tvita, kar mu pade  '
+             'na pamet. Zaradi tega bo Tesla morala uvesti postopke in '
+             'mehanizme  glede Muskovega (oziroma èigarkoli) komuniciranja z '
+             'javnostjo na  dru¾benih omre¾jih.  Poravnavo mora potrditi ¹e '
+             'sodi¹èe.   ',
+  'date': '27. apr 2019',
+  'source': 'Slo-Tech',
+  'time': '21:47',
+  'title': 'Musk zaradi afere s tvitom oglobljen z 20 milijoni dolarjev, '
+           'odstopa kot prvi mo¾ upravnega odbora'}
+{ 'author': 'Matej Hu¹',
+  'category': 'To¾be',
+  'content': ' - Elon Musk se je poravnal z ameri¹ko agencijo za trg '
+             'vrednostnih papirjev (SEC), ki je avgusta zaèela preiskavo '
+             'zaradi sporne objave na Twitterju.\n'
+             ' Musk, ki je tedaj brez utemeljitve trdil, da bodo Teslo '
+             'odkupili in da \n'
+             'je financiranje po ceni 420 dolarjev na delnico ¾e zagotovljeno, '
+             'je s \n'
+             'tem najprej poskrbel za rast cene delnice Tesle, kar je imelo '
+             'finanène \n'
+             'posledice za prodajalce na kratko, kasneje pa je delnica '
+             'izgubila ¹e veè\n'
+             ' vrednosti, ko se je razvedela neoprijemljivost Muskovih '
+             'trditev. Elon \n'
+             'Musk bo plaèal 20 milijonov dolarjev globe,\n'
+             ' a bo lahko ostal na èelu podjetja. Poravnava je bila '
+             'prièakovana, saj \n'
+             'je SEC Muska sodno preganjal, ko ta ni pristal na prvo '
+             'poravnavo, v \n'
+             'takih postopkih pa SEC praviloma zmaga.  Poravnava doloèa,\n'
+             ' da Musku ni treba priznati nobenega nezakonitega ravnanja, da '
+             'morata \n'
+             'Tesla in Musk plaèati vsak 20 milijonov dolarjev globe, da Musk '
+             'lahko \n'
+             'ostane izvr¹ni direktor, ne sme pa biti v naslednjih treh '
+             'letih \n'
+             'predsednik upravnega odbora. Prav tako mora upravni odbor '
+             'imenovati dva \n'
+             'nova èlana. Glavni oèitek podjetju samemu je neobstoj postopkov '
+             'in \n'
+             'kontrolnih mehanizmov za komuniciranje z javnostmi prek '
+             'Muskovega \n'
+             'Twitterjevega raèuna. Z drugimi besedami: Tesla ne bi bila '
+             'smela \n'
+             'dovoliti Musku, da brez odobritve in védenja podjetja tvita, kar '
+             'mu pade\n'
+             ' na pamet. Zaradi tega bo Tesla morala uvesti postopke in '
+             'mehanizme \n'
+             'glede Muskovega (oziroma èigarkoli) komuniciranja z javnostjo '
+             'na \n'
+             'dru¾benih omre¾jih.  Poravnavo mora potrditi ¹e sodi¹èe.   ',
+  'date': '30. sep 2018',
+  'source': 'Slo-Tech',
+  'time': '19:51',
+  'title': 'Musk zaradi afere s tvitom oglobljen z 20 milijoni dolarjev, '
+           'odstopa kot prvi mo¾ upravnega odbora'}
+
+--------------------------------
+----- Nvidia | slotech.com -----
+--------------------------------
+{ 'author': 'Jurij Kristan',
+  'category': 'GrafiÃ¨ne kartice',
+  'content': 'Nvidia je zelo na hitro poslala v trgovine novega Geforca - GTX '
+             '1650; sicer najmanjÂ¹ega predstavnika arhitekture Turing.  '
+             'Ã\x88eprav je bilo zaradi uhajanja informacij Â¾e nekaj dni '
+             'jasno, da bo zeleni tabor  kmalu dal na trg Â¹e najÂ¹ibkejÂ¹o '
+             'Ã¨lanico svoje trenutne serije grafiÃ¨nih  kartic, je lansiranje '
+             'Geforca GTX 1650 zainteresirano javnost ujelo  nepripravljeno, '
+             'saj Nvidia predstavnikom medijev ni poslala niÃ¨esar v  '
+             'predhodno testiranje. Malo zato, ker so Â¹ele danes priÂ¹li '
+             'posodobljeni gonilniki, Â¹e bolj pa zato, ker gre paÃ¨ za '
+             'izdelek za spodnji del trga.   Kartica GTX 1650 je zgrajena na '
+             'Ã¨ipu TU117, ki je obtesan TU116 iz  GTXov 1660; in sicer za '
+             'tretjino. To pomeni 896 jedrc CUDA, 128-bitno  pomnilniÂ¹ko '
+             'vodilo in Â¹tiri gigabajte RAMa GDDR5. Skladno z varÃ¨nostjo  te '
+             'sorte kartic ne potrebuje dodatnega napajanja, je pa nekaj '
+             'draÂ¾ja,  kot je bila ob nastopu GTX 1050, katere zamenjava naj '
+             'bi bila: 150  dolarjev brez davka v ZDA, kar bo pri nas obvezno '
+             'naneslo prek 200  evrov. Pri tej ceni se neposredno bode z '
+             'Radeonom RX 570, ki ga sodeÃ¨ po  prvih testih  gleda v vzvratne '
+             'luÃ¨i. Je pa treba poleg omeniti, da gre v bistvu za  malo '
+             'okrnjeno inaÃ¨ico Ã¨ipa TU117 in da je polna, najverjetneje v '
+             'obliki GTXa 1650 Ti, brÂ¾kone tudi Â¾e za vogalom. ',
+  'date': '27. apr 2019',
+  'source': 'AnandTech',
+  'time': '21:47',
+  'title': 'Nvidia lansirala Geforce GTX 1650'}
+{ 'author': 'Jurij Kristan',
+  'category': 'GrafiÃ¨ne kartice',
+  'content': ' - Nvidia je zelo na hitro poslala v trgovine novega Geforca - '
+             'GTX 1650; sicer najmanjÂ¹ega predstavnika arhitekture Turing.  '
+             'Ã\x88eprav je bilo zaradi uhajanja informacij Â¾e nekaj dni '
+             'jasno, da bo \n'
+             ' kmalu dal na trg Â¹e najÂ¹ibkejÂ¹o Ã¨lanico svoje trenutne '
+             'serije grafiÃ¨nih\n'
+             ' kartic, je lansiranje Geforca GTX 1650 zainteresirano javnost '
+             'ujelo \n'
+             'nepripravljeno, saj Nvidia predstavnikom medijev ni poslala '
+             'niÃ¨esar v \n'
+             'predhodno testiranje. Malo zato, ker so Â¹ele danes priÂ¹li '
+             'posodobljeni gonilniki, Â¹e bolj pa zato, ker gre paÃ¨ za '
+             'izdelek za spodnji del trga. \n'
+             ' Kartica GTX 1650 je zgrajena na Ã¨ipu TU117, ki je obtesan '
+             'TU116 iz \n'
+             'GTXov 1660; in sicer za tretjino. To pomeni 896 jedrc CUDA, '
+             '128-bitno \n'
+             'pomnilniÂ¹ko vodilo in Â¹tiri gigabajte RAMa GDDR5. Skladno z '
+             'varÃ¨nostjo \n'
+             'te sorte kartic ne potrebuje dodatnega napajanja, je pa nekaj '
+             'draÂ¾ja, \n'
+             'kot je bila ob nastopu GTX 1050, katere zamenjava naj bi bila: '
+             '150 \n'
+             'dolarjev brez davka v ZDA, kar bo pri nas obvezno naneslo prek '
+             '200 \n'
+             'evrov. Pri tej ceni se neposredno bode z Radeonom RX 570, ki ga '
+             'sodeÃ¨ po\n'
+             ' prvih testih\n'
+             ' gleda v vzvratne luÃ¨i. Je pa treba poleg omeniti, da gre v '
+             'bistvu za \n'
+             'malo okrnjeno inaÃ¨ico Ã¨ipa TU117 in da je polna, najverjetneje '
+             'v obliki GTXa 1650 Ti, brÂ¾kone tudi Â¾e za vogalom. ',
+  'date': '23. apr 2019',
+  'source': 'AnandTech',
+  'time': '22:59',
+  'title': 'Nvidia lansirala Geforce GTX 1650'}
+
+--------------------------------
+------- BMW i3 | avto.net ------
+--------------------------------
+{ 'cars': [ { 'data': [ 'NOVO vozilo',
+                        '2019 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1058558_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14462.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '39.990 '},
+            { 'data': [ 'NOVO vozilo',
+                        '10 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1057881_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14462.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '30.990 '},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '15135 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1053485_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 94Ah',
+              'price': '24.990 '},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '16450 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1038064_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14834.gif',
+              'name': 'BMW i3 94Ah  REX Avt.',
+              'price': '27.199 '},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '16450 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1039841_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14834.gif',
+              'name': 'BMW i3 REX 94Ah Automatik',
+              'price': '27.199 '},
+            { 'data': [ 'NOVO vozilo',
+                        '10 km',
+                        'elektro pogon, 135 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1062443_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14462.gif',
+              'name': 'BMW i3 s  120Ah  Avt.',
+              'price': '40.270 '},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '26900 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1064081_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10642.gif',
+              'name': 'BMW i3 Avt.  full elektric',
+              'price': '21.111 '},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '16600 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/0.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/13152.gif',
+              'name': 'BMW i3 94Ah',
+              'price': '24.900 '},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '51000 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1066948_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10642.gif',
+              'name': 'BMW i3 Novo 100Ah  HD kamera pdc navigac...',
+              'price': '25.555 '},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1032146_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11728.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '38.790 '},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '34000 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1054459_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10642.gif',
+              'name': 'BMW i3 94Ah  Avt. full electric',
+              'price': '27.777 '},
+            { 'data': [ 'NOVO vozilo',
+                        '1 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1038707_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1155.gif',
+              'name': 'BMW i3 s  120Ah  Avt. ZALOGA',
+              'price': '41.490 '},
+            { 'data': [ 'NOVO vozilo',
+                        '1 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1036815_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1155.gif',
+              'name': 'BMW i3 120Ah  Avt. AKCIJA',
+              'price': '30.990 '},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1037999_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/13529.gif',
+              'name': 'BMW i3 94Ah  Avt.',
+              'price': '30.500 '},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        '5000 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1038921_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1183.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '32.400 '},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 135 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1039676_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11728.gif',
+              'name': 'BMW i3 s  120Ah  Avt.',
+              'price': '40.260 '},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1032617_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11001.gif',
+              'name': 'BMW i3 120Ah  Avt. - BUSINESS EDITION',
+              'price': '30.990 '},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '32500 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1042390_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10297.gif',
+              'name': 'BMW i3 REX Avt. 60 Ah',
+              'price': '20.900 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '14200 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1055309_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11728.gif',
+              'name': 'BMW i3 94Ah  Avt.',
+              'price': '31.400 '},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '8100 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1041025_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15318.gif',
+              'name': 'BMW i3 BMW i 3 REX 94 Ah Automatic',
+              'price': '30.900 '},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1029368_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 120Ah - AKCIJA',
+              'price': '30.990 '},
+            { 'data': [ 'Letnik 1.registracije:2015',
+                        '5000 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1078900_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1193.gif',
+              'name': 'BMW i3 i3 Avt..NAVIPROFF.LED.KAMERA.HITR...',
+              'price': '25.999 '},
+            { 'data': [ 'Letnik 1.registracije:2015',
+                        '29870 km',
+                        'elektro pogon, 127 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1062054_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1155.gif',
+              'name': 'BMW i3 Avt.60 Ah KOT NOV',
+              'price': '20.900 '},
+            { 'data': [ 'Letnik 1.registracije:2015',
+                        '59850 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1059865_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14705.gif',
+              'name': 'BMW i3 REX Avt.',
+              'price': '21.900 '},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1066653_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 94Ah  Avt.',
+              'price': '38.500 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '15900 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1044356_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 94Ah Lumar Edition ',
+              'price': '34.900 '}]}
+{ 'cars': [ { 'data': [ 'NOVO vozilo',
+                        '2019 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1058558_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14462.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '39.990 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        '10 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1057881_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14462.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '30.990 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '15135 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1053485_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 94Ah',
+              'price': '24.990 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '16450 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1038064_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14834.gif',
+              'name': 'BMW i3 94Ah  REX Avt.',
+              'price': '27.199 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '16450 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1039841_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14834.gif',
+              'name': 'BMW i3 REX 94Ah Automatik',
+              'price': '27.199 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        '10 km',
+                        'elektro pogon, 135 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1062443_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14462.gif',
+              'name': 'BMW i3 s  120Ah  Avt.',
+              'price': '40.270 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '26900 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1064081_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10642.gif',
+              'name': 'BMW i3 Avt.  full elektric',
+              'price': '21.111 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '16600 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/0.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/13152.gif',
+              'name': 'BMW i3 94Ah',
+              'price': '24.900 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '51000 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1066948_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10642.gif',
+              'name': 'BMW i3 Novo 100Ah  HD kamera pdc navigac...',
+              'price': '25.555 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1032146_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11728.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '38.790 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '34000 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1054459_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10642.gif',
+              'name': 'BMW i3 94Ah  Avt. full electric',
+              'price': '27.777 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        '1 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1038707_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1155.gif',
+              'name': 'BMW i3 s  120Ah  Avt. ZALOGA',
+              'price': '41.490 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        '1 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1036815_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1155.gif',
+              'name': 'BMW i3 120Ah  Avt. AKCIJA',
+              'price': '30.990 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1037999_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/13529.gif',
+              'name': 'BMW i3 94Ah  Avt.',
+              'price': '30.500 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        '5000 km',
+                        'elektro pogon, 75 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1038921_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1183.gif',
+              'name': 'BMW i3 120Ah  Avt.',
+              'price': '32.400 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 135 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1039676_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11728.gif',
+              'name': 'BMW i3 s  120Ah  Avt.',
+              'price': '40.260 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1032617_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11001.gif',
+              'name': 'BMW i3 120Ah  Avt. - BUSINESS EDITION',
+              'price': '30.990 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2016',
+                        '32500 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1042390_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/10297.gif',
+              'name': 'BMW i3 REX Avt. 60 Ah',
+              'price': '20.900 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '14200 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1055309_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/11728.gif',
+              'name': 'BMW i3 94Ah  Avt.',
+              'price': '31.400 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '8100 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1041025_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15318.gif',
+              'name': 'BMW i3 BMW i 3 REX 94 Ah Automatic',
+              'price': '30.900 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1029368_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 120Ah - AKCIJA',
+              'price': '30.990 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2015',
+                        '5000 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1078900_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1193.gif',
+              'name': 'BMW i3 i3 Avt..NAVIPROFF.LED.KAMERA.HITR...',
+              'price': '25.999 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2015',
+                        '29870 km',
+                        'elektro pogon, 127 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1062054_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1155.gif',
+              'name': 'BMW i3 Avt.60 Ah KOT NOV',
+              'price': '20.900 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2015',
+                        '59850 km',
+                        'hibridni pogon, 647 ccm, 125 kW  / 170 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1059865_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/14705.gif',
+              'name': 'BMW i3 REX Avt.',
+              'price': '21.900 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1066653_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 94Ah  Avt.',
+              'price': '38.500 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '15900 km',
+                        'elektro pogon, 125 kW ',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/1044356_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20BMW_files/15236.gif',
+              'name': 'BMW i3 94Ah Lumar Edition ',
+              'price': '34.900 \x80'}]}
+
+--------------------------------
+------- Arteon | avto.net ------
+--------------------------------
+{ 'cars': [ { 'data': [ 'Letnik 1.registracije:2017',
+                        '49688 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik / tiptronic'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1042892_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/15572.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI DSG-POL...',
+              'price': '34.990 '},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '34400 km',
+                        'diesel motor, 1968 ccm, 179 kW  / 244 KM',
+                        'avtomatski menjalnik / tiptronic'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1085361_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/13586.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI Elegance 4M DS...',
+              'price': '37.990 '},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '35600 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1057490_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10349.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI LED NAVI PANO.',
+              'price': '35.380 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1051549_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/14942.gif',
+              'name': 'Volkswagen Arteon .2.0 TDI R-Line DSG',
+              'price': '36.127 '},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1060979_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon R-line. Aut.2.0TDI.Nav...',
+              'price': '37.000 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1033886_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/746.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI 4 Motio...',
+              'price': '47.113 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1040123_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10368.gif',
+              'name': 'Volkswagen Arteon Elegance 2.0 TDI DSG',
+              'price': '37.502 '},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '42000 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1062642_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10030.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0TDI DSG',
+              'price': '30.990 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1040489_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI DSG - N...',
+              'price': '40.670 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '23000 km',
+                        'diesel motor, 1998 ccm, 150 kW  / 205 KM',
+                        'roèni menjalnik (6 pr.)'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1039284_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/746.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '33.500 '},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1036124_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon Elegance 2.0 TDI',
+              'price': '36.500 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'roèni menjalnik (6 pr.)'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1061839_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/411.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI Vozilo ...',
+              'price': '32.337 '},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1032335_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/14941.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '40.300 '},
+            { 'data': [ 'NOVO vozilo',
+                        'bencinski motor, 1498 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1077220_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/314.gif',
+              'name': 'Volkswagen Arteon R-Line 1.5 TSI DSG',
+              'price': '37.247 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1998 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1074686_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/478.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '39.447 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '5000 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1074546_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/14942.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '38.590 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1072168_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/314.gif',
+              'name': 'Volkswagen Arteon R-LINE 2.0 TDI DSG',
+              'price': '35.580 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '2500 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1071705_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI DSG R-line',
+              'price': '39.333 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1064492_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/11313.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI 4M',
+              'price': '42.213 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '16441 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1062084_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10349.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI DSG',
+              'price': '32.499 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '8860 km',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1061957_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10349.gif',
+              'name': 'Volkswagen Arteon R-line',
+              'price': '39.000 '},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1060293_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/411.gif',
+              'name': 'Volkswagen Arteon .R-Line 2.0 TDI AKCIJA...',
+              'price': '35.590 '},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        '1500 km',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1052457_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/12556.gif',
+              'name': 'Volkswagen Arteon .R-LINE 2.0 TDI 4M DSG',
+              'price': '42.890 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '2500 km',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1038012_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/744.gif',
+              'name': 'Volkswagen Arteon R-LINE 190 KS ',
+              'price': '41.990 '},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '18850 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1067749_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10561.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI-AUT.-R-LINE-SL...',
+              'price': '34.980 '},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '22928 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1074642_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/490.gif',
+              'name': 'Volkswagen Arteon Elegance 2.0 TDI DSG',
+              'price': '32.990 '}]}
+{ 'cars': [ { 'data': [ 'Letnik 1.registracije:2017',
+                        '49688 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik / tiptronic'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1042892_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/15572.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI DSG-POL...',
+              'price': '34.990 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '34400 km',
+                        'diesel motor, 1968 ccm, 179 kW  / 244 KM',
+                        'avtomatski menjalnik / tiptronic'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1085361_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/13586.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI Elegance 4M DS...',
+              'price': '37.990 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '35600 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1057490_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10349.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI LED NAVI PANO.',
+              'price': '35.380 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1051549_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/14942.gif',
+              'name': 'Volkswagen Arteon .2.0 TDI R-Line DSG',
+              'price': '36.127 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1060979_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon R-line. Aut.2.0TDI.Nav...',
+              'price': '37.000 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1033886_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/746.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI 4 Motio...',
+              'price': '47.113 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1040123_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10368.gif',
+              'name': 'Volkswagen Arteon Elegance 2.0 TDI DSG',
+              'price': '37.502 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '42000 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1062642_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10030.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0TDI DSG',
+              'price': '30.990 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1040489_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI DSG - N...',
+              'price': '40.670 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '23000 km',
+                        'diesel motor, 1998 ccm, 150 kW  / 205 KM',
+                        'roèni menjalnik (6 pr.)'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1039284_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/746.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '33.500 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1036124_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon Elegance 2.0 TDI',
+              'price': '36.500 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'roèni menjalnik (6 pr.)'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1061839_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/411.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI Vozilo ...',
+              'price': '32.337 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1032335_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/14941.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '40.300 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'bencinski motor, 1498 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1077220_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/314.gif',
+              'name': 'Volkswagen Arteon R-Line 1.5 TSI DSG',
+              'price': '37.247 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1998 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1074686_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/478.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '39.447 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '5000 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1074546_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/14942.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI',
+              'price': '38.590 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1072168_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/314.gif',
+              'name': 'Volkswagen Arteon R-LINE 2.0 TDI DSG',
+              'price': '35.580 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '2500 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1071705_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10074.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI DSG R-line',
+              'price': '39.333 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1064492_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/11313.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI 4M',
+              'price': '42.213 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '16441 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1062084_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10349.gif',
+              'name': 'Volkswagen Arteon R-Line 2.0 TDI DSG',
+              'price': '32.499 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '8860 km',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1061957_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10349.gif',
+              'name': 'Volkswagen Arteon R-line',
+              'price': '39.000 \x80'},
+            { 'data': [ 'NOVO vozilo',
+                        'diesel motor, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1060293_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/411.gif',
+              'name': 'Volkswagen Arteon .R-Line 2.0 TDI AKCIJA...',
+              'price': '35.590 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2019',
+                        '1500 km',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1052457_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/12556.gif',
+              'name': 'Volkswagen Arteon .R-LINE 2.0 TDI 4M DSG',
+              'price': '42.890 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '2500 km',
+                        'diesel motor, 1968 ccm, 140 kW  / 191 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1038012_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/744.gif',
+              'name': 'Volkswagen Arteon R-LINE 190 KS ',
+              'price': '41.990 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2018',
+                        '18850 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1067749_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/10561.gif',
+              'name': 'Volkswagen Arteon 2.0 TDI-AUT.-R-LINE-SL...',
+              'price': '34.980 \x80'},
+            { 'data': [ 'Letnik 1.registracije:2017',
+                        '22928 km',
+                        'diesel motor, 1968 ccm, 110 kW  / 150 KM',
+                        'avtomatski menjalnik'],
+              'img': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/1074642_160.jpg',
+              'logo': 'www.Avto.net%20%20Najve%C4%8Dja%20ponudba%20Volkswagen_files/490.gif',
+              'name': 'Volkswagen Arteon Elegance 2.0 TDI DSG',
+              'price': '32.990 \x80'}]}
